@@ -1,0 +1,9 @@
+.popup__menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 56px 0 0 11px;
+  padding: 0;
+}

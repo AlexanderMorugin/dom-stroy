@@ -1,0 +1,8 @@
+.popup__menu-phone-box {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  box-sizing: border-box;
+  margin: 18px 0 0 11px;
+  padding: 0;
+}

@@ -1,0 +1,14 @@
+.lead__cost-box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-sizing: border-box;
+  margin: 46px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .lead__cost-box {
+    margin-top: 128px;
+  }
+}

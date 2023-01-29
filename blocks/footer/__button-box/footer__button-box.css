@@ -1,0 +1,10 @@
+.footer__button-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 251px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

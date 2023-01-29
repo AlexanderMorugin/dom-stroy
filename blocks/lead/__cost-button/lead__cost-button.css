@@ -1,0 +1,49 @@
+.lead__cost-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;  
+  border: 1px solid #A5A5A5;
+  border-radius: 50%;
+  background-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.lead__cost-button::before {
+  content: '';
+  position: absolute;
+  border: 1px solid #A5A5A5;
+  left: -20px;
+  opacity: 0;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 2s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .lead__cost-button {
+    width: 57px;
+    height: 57px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}

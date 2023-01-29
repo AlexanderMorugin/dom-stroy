@@ -1,0 +1,21 @@
+.header__nav-top {
+  display: flex;
+  justify-content: space-between;
+  background: #15193D;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px 90px;
+  list-style: none;
+}
+
+@media screen and (max-width: 1024px){
+  .header__nav-top {
+    padding: 20px 27px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header__nav-top {
+    display: none;
+  }
+}

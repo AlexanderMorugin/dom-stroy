@@ -1,0 +1,9 @@
+.popup__menu-span {
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(33, 40, 100, 1);
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}

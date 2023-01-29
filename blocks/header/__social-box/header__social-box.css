@@ -1,0 +1,13 @@
+.header__social-box {
+  display: flex;
+  gap: 11px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px){
+  .header__social-box {
+    gap: 6px;
+  }
+}

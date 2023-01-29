@@ -1,0 +1,15 @@
+.footer__data-text {
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px){
+  .footer__data-text {
+    line-height: 13px;
+    font-size: 10px;
+  }
+}

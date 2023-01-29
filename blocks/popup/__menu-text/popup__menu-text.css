@@ -1,0 +1,12 @@
+.popup__menu-text {
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+}
+
+.popup__menu-text:first-child {
+  margin-bottom: 15px;
+}

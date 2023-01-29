@@ -1,0 +1,13 @@
+.footer__button_mobile_top {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__button_mobile_top {
+    display: block;
+    max-width: 300px;
+    line-height: 17px;
+    font-size: 14px;
+    margin-top: 44px;
+  }
+}

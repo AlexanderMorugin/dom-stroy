@@ -1,0 +1,106 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/font.css);
+
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__logo-box/header__logo-box.css);
+@import url(../blocks/header/__logo-text/header__logo-text.css);
+@import url(../blocks/header/__logo-image/header__logo-image.css);
+@import url(../blocks/header/__data-box/header__data-box.css);
+@import url(../blocks/header/__data-text/header__data-text.css);
+@import url(../blocks/header/__data-span/header__data-span.css);
+@import url(../blocks/header/__phone-box/header__phone-box.css);
+@import url(../blocks/header/__phone/header__phone.css);
+@import url(../blocks/header/__right-box/header__right-box.css);
+@import url(../blocks/header/__button-call/header__button-call.css);
+@import url(../blocks/header/__social-box/header__social-box.css);
+@import url(../blocks/header/__social/header__social.css);
+@import url(../blocks/header/__social/_type/header__social_type_youtube.css);
+@import url(../blocks/header/__social/_type/header__social_type_instagram.css);
+@import url(../blocks/header/__social/_type/header__social_type_vk.css);
+@import url(../blocks/header/__social/_type/header__social_type_whatsapp.css);
+@import url(../blocks/header/__social/_type/header__social_type_telegram.css);
+@import url(../blocks/header/__nav-top/header__nav-top.css);
+@import url(../blocks/header/__nav-top-item/header__nav-top-item.css);
+@import url(../blocks/header/__nav-top-link/header__nav-top-link.css);
+@import url(../blocks/header/__nav-bottom/header__nav-bottom.css);
+@import url(../blocks/header/__nav-bottom-line/header__nav-bottom-line.css);
+@import url(../blocks/header/__nav-bottom-link/header__nav-bottom-link.css);
+@import url(../blocks/header/__mobile-menu/header__mobile-menu.css);
+
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/_menu/popup_menu.css);
+@import url(../blocks/popup/__menu-container/popup__menu-container.css);
+@import url(../blocks/popup/__menu-top/popup__menu-top.css);
+@import url(../blocks/popup/__menu-logo-text/popup__menu-logo-text.css);
+@import url(../blocks/popup/__menu-logo-image/popup__menu-logo-image.css);
+@import url(../blocks/popup/__menu-logo-box/popup__menu-logo-box.css);
+@import url(../blocks/popup/__menu-button-close/popup__menu-button-close.css);
+@import url(../blocks/popup/__menu-links/popup__menu-links.css);
+@import url(../blocks/popup/__menu-link/popup__menu-link.css);
+@import url(../blocks/popup/__menu-line/popup__menu-line.css);
+@import url(../blocks/popup/__menu-text-box/popup__menu-text-box.css);
+@import url(../blocks/popup/__menu-text/popup__menu-text.css);
+@import url(../blocks/popup/__menu-span/popup__menu-span.css);
+@import url(../blocks/popup/__menu-phone-box/popup__menu-phone-box.css);
+@import url(../blocks/popup/__menu-phone/popup__menu-phone.css);
+@import url(../blocks/popup/__menu-social-box/popup__menu-social-box.css);
+@import url(../blocks/popup/__menu-social/popup__menu-social.css);
+@import url(../blocks/popup/__menu-social/_type/popup__menu-social_type_instagram.css);
+@import url(../blocks/popup/__menu-social/_type/popup__menu-social_type_telegram.css);
+@import url(../blocks/popup/__menu-social/_type/popup__menu-social_type_vk.css);
+@import url(../blocks/popup/__menu-social/_type/popup__menu-social_type_whatsapp.css);
+@import url(../blocks/popup/__menu-social/_type/popup__menu-social_type_youtube.css);
+@import url(../blocks/popup/__menu-button-call/popup__menu-button-call.css);
+
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__overlay/lead__overlay.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(../blocks/lead/__cost-box/lead__cost-box.css);
+@import url(../blocks/lead/__cost-button/lead__cost-button.css);
+@import url(../blocks/lead/__cost-arrow/lead__cost-arrow.css);
+@import url(../blocks/lead/__cost-text/lead__cost-text.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__top/footer__top.css);
+@import url(../blocks/footer/__logo-box/footer__logo-box.css);
+@import url(../blocks/footer/__logo-text/footer__logo-text.css);
+@import url(../blocks/footer/__logo-image/footer__logo-image.css);
+@import url(../blocks/footer/__data-box/footer__data-box.css);
+@import url(../blocks/footer/__data-text/footer__data-text.css);
+@import url(../blocks/footer/__data-span/footer__data-span.css);
+@import url(../blocks/footer/__phone-box/footer__phone-box.css);
+@import url(../blocks/footer/__phone/footer__phone.css);
+@import url(../blocks/footer/__right-box/footer__right-box.css);
+@import url(../blocks/footer/__social-title/footer__social-title.css);
+@import url(../blocks/footer/__social-box/footer__social-box.css);
+@import url(../blocks/footer/__social/footer__social.css);
+@import url(../blocks/footer/__social/_type/footer__social_type_youtube.css);
+@import url(../blocks/footer/__social/_type/footer__social_type_instagram.css);
+@import url(../blocks/footer/__social/_type/footer__social_type_vk.css);
+@import url(../blocks/footer/__social/_type/footer__social_type_whatsapp.css);
+@import url(../blocks/footer/__social/_type/footer__social_type_telegram.css);
+@import url(../blocks/footer/__middle/footer__middle.css);
+@import url(../blocks/footer/__link-box/footer__link-box.css);
+@import url(../blocks/footer/__link-title/footer__link-title.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__button-box/footer__button-box.css);
+@import url(../blocks/footer/__button/footer__button.css);
+@import url(../blocks/footer/__button/_second/footer__button_second.css);
+@import url(../blocks/footer/__button/_mobile/footer__button_mobile_top.css);
+@import url(../blocks/footer/__button/_mobile/footer__button_mobile_bottom.css);
+@import url(../blocks/footer/__bottom/footer__bottom.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+@import url(../blocks/footer/__bottom-links/footer__bottom-links.css);
+@import url(../blocks/footer/__bottom-link/footer__bottom-link.css);
+
+
+
+
+
+/* * { outline: 1px solid red; } */

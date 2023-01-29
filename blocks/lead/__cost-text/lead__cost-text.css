@@ -1,0 +1,16 @@
+.lead__cost-text {
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .lead__cost-text {
+    line-height: 17px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,8 @@
+.header__nav-bottom-line {
+  width: 1px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

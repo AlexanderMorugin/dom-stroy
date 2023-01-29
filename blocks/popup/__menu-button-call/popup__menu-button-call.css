@@ -1,0 +1,13 @@
+.popup__menu-button-call {
+  border: 1px solid rgba(33, 40, 100, 1);
+  border-radius: 25px;
+  background: #fff;
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(33, 40, 100, 1);
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 24px 0 0 11px;
+  padding: 15px 46px;
+}

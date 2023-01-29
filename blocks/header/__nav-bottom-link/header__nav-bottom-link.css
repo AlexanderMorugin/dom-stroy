@@ -1,0 +1,15 @@
+.header__nav-bottom-link {
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  transition: .2s;
+  cursor: pointer; 
+}
+
+.header__nav-bottom-link:hover {
+  color: #FFC239;
+}

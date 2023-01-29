@@ -1,0 +1,26 @@
+.header__nav-top-link {
+  display: inline-block;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  transition: .2s;
+  cursor: pointer;  
+}
+
+.header__nav-top-link:hover {
+  font-weight: 700;
+  color: #FFC239;
+}
+
+.header__nav-top-link::before {
+  font-weight: 700;
+  display: block;
+  content: attr(title);
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}

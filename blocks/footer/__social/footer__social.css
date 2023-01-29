@@ -1,0 +1,28 @@
+.footer__social {
+  width: 35px;
+  height: 35px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: .3s;
+  opacity: .8;
+}
+
+.footer__social:hover {
+  opacity: 1;
+  scale: 1.2;
+}
+
+@media screen and (max-width: 1024px){
+  .footer__social {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .footer__social {
+    width: 35px;
+    height: 35px;
+  }
+}

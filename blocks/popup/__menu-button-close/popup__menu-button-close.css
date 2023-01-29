@@ -1,0 +1,10 @@
+.popup__menu-button-close {
+  width: 25px;
+  height: 24px;
+  background: url("../../../images/icon-popup-close.svg");
+  background-size: 100%;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #22242E;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

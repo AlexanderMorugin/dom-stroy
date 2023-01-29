@@ -1,0 +1,23 @@
+.footer__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "footer__copyright footer__bottom-links";
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 17px 71px 24px 52px;
+}
+
+@media screen and (max-width: 1024px){
+  .footer__bottom {
+    padding: 17px 27px 24px 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__bottom {
+    grid-template-columns: 1fr;
+    grid-template-areas: "footer__bottom-links" "footer__copyright";
+    padding: 29px 20px 36px 20px;
+  }
+}

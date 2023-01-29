@@ -1,0 +1,7 @@
+.popup__menu-container {
+  width: 100%;
+  max-width: 328px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}

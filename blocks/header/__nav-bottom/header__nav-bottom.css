@@ -1,0 +1,22 @@
+.header__nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8C93D1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px 90px;
+  list-style: none;
+}
+
+@media screen and (max-width: 1024px){
+  .header__nav-bottom {
+    padding: 5px 27px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header__nav-bottom {
+    display: none;
+  }
+}

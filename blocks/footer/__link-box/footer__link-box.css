@@ -1,0 +1,16 @@
+.footer__link-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 200px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__link-box {
+    align-items: center;
+    max-width: 768px;
+  }
+}

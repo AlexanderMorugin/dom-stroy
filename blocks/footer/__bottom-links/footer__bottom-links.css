@@ -1,0 +1,17 @@
+.footer__bottom-links {
+  grid-area: footer__bottom-links;
+  display: flex;
+  gap: 32px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__bottom-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+  }
+}

@@ -1,0 +1,10 @@
+.popup__menu-logo-text {
+  line-height: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}

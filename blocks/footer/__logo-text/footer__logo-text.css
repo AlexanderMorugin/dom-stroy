@@ -1,0 +1,10 @@
+.footer__logo-text {
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
