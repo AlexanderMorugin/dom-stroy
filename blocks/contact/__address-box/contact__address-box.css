@@ -1,0 +1,14 @@
+.contact__address-box {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  box-sizing: border-box;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__address-box {
+    gap: 16px;
+  }
+}

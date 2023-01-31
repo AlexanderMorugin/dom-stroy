@@ -1,0 +1,23 @@
+.advantage__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(246, 246, 249, 0.8);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 84px 78px 92px 89px;
+}
+
+@media screen and (max-width: 1024px) {
+  .advantage__cards {
+    padding: 72px 27px 92px 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantage__cards {
+    padding-bottom: 23px;
+  }
+}

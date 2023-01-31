@@ -1,0 +1,10 @@
+.contact__email {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  color: #000;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}

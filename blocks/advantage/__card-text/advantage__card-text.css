@@ -1,0 +1,15 @@
+.advantage__card-text {
+  grid-area: advantage__card-text;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .advantage__card-text {
+    grid-area: none;
+    margin-top: 10px;
+  }
+}

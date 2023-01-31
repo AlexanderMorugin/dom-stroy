@@ -1,0 +1,15 @@
+.contact__name {
+  line-height: 27px;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Inter';
+  color: #000;
+  margin: 34px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__name {
+    margin-top: 39px;
+  }
+}

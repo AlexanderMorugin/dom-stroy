@@ -1,0 +1,23 @@
+.matcap__block-title {
+  line-height: 42px;
+  font-size: 38px;
+  font-weight: 400;
+  font-family: 'Inter';
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px){
+  .matcap__block-title {
+    line-height: 36px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 374px){
+  .matcap__block-title {
+    line-height: 34px;
+    font-size: 34px;
+  }
+}

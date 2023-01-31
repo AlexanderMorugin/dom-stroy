@@ -1,0 +1,19 @@
+.connect__subtitle {
+  width: 100%;
+  max-width: 490px;
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Inter';
+  color: rgba(0, 0, 0, 0.6);
+  margin: 26px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .connect__subtitle {
+    line-height: 17px;
+    font-size: 14px;
+    margin-top: 32px;
+  }
+}

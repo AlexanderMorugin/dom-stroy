@@ -1,0 +1,14 @@
+.matcap__middle-box {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 51px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px){
+  .matcap__middle-box {
+    justify-content: flex-end;
+    margin-top: 334px;
+  }
+}

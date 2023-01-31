@@ -2,11 +2,18 @@
   line-height: 22px;
   font-size: 18px;
   font-weight: 700;
+  font-family: 'Inter';
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   margin: 0;
   padding: 0;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.footer__link-title:hover {
+  color: #FFC239;
 }
 
 @media screen and (max-width: 768px) {

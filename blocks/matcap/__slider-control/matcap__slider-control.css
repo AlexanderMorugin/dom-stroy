@@ -1,0 +1,18 @@
+.matcap__slider-control {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  opacity: .5;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.matcap__slider-control:hover {
+  opacity: 1;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}

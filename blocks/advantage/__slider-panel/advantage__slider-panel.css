@@ -1,0 +1,15 @@
+.advantage__slider-panel {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 120px;
+  box-sizing: border-box;
+  margin: 43px auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .advantage__slider-panel {
+    display: flex;
+  }
+}

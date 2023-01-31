@@ -1,0 +1,19 @@
+.matcap__block {
+  width: 100%;
+  background: #F1F1F6;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 79px 78px 48px 63px;
+}
+
+@media screen and (max-width: 1024px){
+  .matcap__block {
+    padding-right: 27px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .matcap__block {
+    padding: 91px 27px 49px 27px;
+  }
+}

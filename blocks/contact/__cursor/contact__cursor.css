@@ -1,0 +1,13 @@
+.contact__cursor {
+  position: absolute;
+  top: 37%;
+  right: 250px;
+  width: 83px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__cursor {
+    top: 10%;
+    right: 200px;
+  }
+}

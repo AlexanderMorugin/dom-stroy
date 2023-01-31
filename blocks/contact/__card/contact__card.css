@@ -1,0 +1,27 @@
+.contact__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 581px;
+  border-radius: 0 0 20px 20px;
+  background: rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 92px 72px 72px 64px;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact__card {
+    max-width: 481px;
+    padding: 73px 31px 97px 31px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__card {
+    max-width: 800px;
+    border-radius: 20px 20px 0 0;
+  }
+}

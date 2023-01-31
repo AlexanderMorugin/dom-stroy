@@ -1,0 +1,14 @@
+.advantage__card-image {
+  grid-area: advantage__card-image;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .advantage__card-image {
+    grid-area: none;
+    max-width: 90px;
+  }
+}

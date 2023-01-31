@@ -1,0 +1,25 @@
+.advantage__vk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: #F6F6F9;
+  opacity: .9;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 111px 89px 132px 89px;
+}
+
+@media screen and (max-width: 1024px){
+  .advantage__vk {
+    padding-right: 27px;
+    padding-left: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantage__vk {
+    flex-direction: column;
+    padding: 111px 28px 155px 28px;
+  }
+}

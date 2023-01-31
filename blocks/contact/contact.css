@@ -1,0 +1,24 @@
+.contact {
+  position: relative;
+  width: 100%;
+  background: url("../../images/img-contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 122px 129px 122px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    padding: 0 30px 129px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    background-size: cover;
+    padding: 505px 0 0 0;
+  }
+}

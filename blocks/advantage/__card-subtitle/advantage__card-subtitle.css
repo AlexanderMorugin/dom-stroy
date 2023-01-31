@@ -1,0 +1,23 @@
+.advantage__card-subtitle {
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  color: rgba(0, 0, 0, 0.6);
+  margin: 17px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .advantage__card-subtitle {
+    line-height: 15px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantage__card-subtitle {
+    text-align: center;
+  }
+}

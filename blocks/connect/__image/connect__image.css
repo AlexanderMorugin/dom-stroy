@@ -1,0 +1,22 @@
+.connect__image {
+  display: block;
+  width: 80%;
+  height: 80%;
+  max-width: 578px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .connect__image {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .connect__image {
+    display: none;
+  }
+}

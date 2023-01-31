@@ -1,0 +1,15 @@
+.contact__box-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__box-two {
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+}

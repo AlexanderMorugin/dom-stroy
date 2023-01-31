@@ -1,0 +1,22 @@
+.connect {
+  display: flex;
+  gap: 53px;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 179px 153px 172px 89px;
+}
+
+@media screen and (max-width: 1024px){
+  .connect {
+    padding-right: 27px;
+    padding-left: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .connect {
+    padding: 123px 28px 146px 28px;
+  }
+}

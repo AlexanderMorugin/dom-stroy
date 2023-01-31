@@ -1,0 +1,11 @@
+.matcap__slider-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 152px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  float: right;
+}

@@ -1,0 +1,15 @@
+.contact__phone-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  margin: 19px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__phone-box {
+    flex-direction: column;
+    margin-top: 13px;
+  }
+}

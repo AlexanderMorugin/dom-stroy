@@ -1,0 +1,13 @@
+.contact__social-box {
+  display: flex;
+  gap: 11px;
+  box-sizing: border-box;
+  margin: 14px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__social-box {
+    margin-top: 21px;
+  }
+}

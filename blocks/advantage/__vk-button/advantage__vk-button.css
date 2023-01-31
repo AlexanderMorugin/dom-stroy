@@ -1,0 +1,34 @@
+.advantage__vk-button {
+  border: 0;
+  border-radius: 30px;
+  background: #353D83;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Inter';
+  color: #fff;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 23px 43px; 
+  background-image: linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size .4s, color .3s ease-in-out;
+  cursor: pointer;
+}
+
+.advantage__vk-button:hover {
+  background-size: 100% 100%;
+  color: #353D83;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .advantage__vk-button {
+    border-radius: 40px;
+    margin-top: 102px;
+    padding: 23px 34px;
+  }
+}

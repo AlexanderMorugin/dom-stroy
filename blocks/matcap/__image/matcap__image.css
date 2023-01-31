@@ -1,0 +1,14 @@
+.matcap__image {
+  display: block;
+  width: 51%;
+  object-fit: cover;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .matcap__image {
+    display: none;
+  }
+}

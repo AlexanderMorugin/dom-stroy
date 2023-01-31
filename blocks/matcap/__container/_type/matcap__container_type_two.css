@@ -1,0 +1,12 @@
+.matcap__container_type_two {
+  background: none;
+}
+
+@media screen and (max-width: 768px){
+  .matcap__container_type_two {
+    background: url("../../../../images/img-matcap-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

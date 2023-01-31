@@ -1,0 +1,14 @@
+.advantage__vk-text {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .advantage__vk-text {
+    gap: 30px;
+  }
+}

@@ -1,0 +1,15 @@
+.advantage__card-box {
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  margin: 51px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .advantage__card-box {
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 43px;
+  }
+}

@@ -1,0 +1,61 @@
+.connect__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 143px;
+  height: 143px;  
+  border: 1px solid #FFB611;
+  border-radius: 50%;
+  background-color: transparent;
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Inter';
+  text-align: center;
+  box-sizing: border-box;
+  margin: 45px 0 0 0;
+  padding: 52px 25px;
+  position: relative;
+  cursor: pointer;
+  float: right;
+  transition: .3s;
+}
+
+.connect__button::before {
+  content: '';
+  position: absolute;
+  border: 1px solid #FFB611;
+  left: -20px;
+  opacity: 0;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 2s linear infinite;
+}
+
+.connect__button:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .connect__button {
+    width: 135px;
+    height: 135px;
+    margin-right: 4px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}

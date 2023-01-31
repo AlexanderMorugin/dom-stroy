@@ -11,5 +11,5 @@
 Сайт
 * [ссылка на проект](https://alexandermorugin.github.io/dom-stroy/)
 
-
+Автор проекта
 * Александр Моругин, 2023г.
