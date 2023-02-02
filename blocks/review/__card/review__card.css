@@ -1,0 +1,22 @@
+.review__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 559px;
+  background: #fff;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 2px 8px 26px 0px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 72px 62px 82px 62px;
+  opacity: .6;
+  transform: translate(0,-110px);
+}
+
+@media screen and (max-width: 768px){
+  .review__card {
+    max-width: 320px;
+    padding: 50px 30px 60px 30px;
+  }
+}

@@ -1,0 +1,15 @@
+.review__line {
+  width: 37px;
+  height: 2px;
+  background: rgba(255, 194, 57, 0.6);
+  box-sizing: border-box;
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px){
+  .review__line {
+    width: 21px;
+    margin-top: 57px;
+  }
+}

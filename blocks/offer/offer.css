@@ -1,0 +1,22 @@
+.offer {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 88px 47px 124px 47px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px){
+  .offer {
+    padding-right: 27px;
+    padding-left: 27px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .offer {
+    padding: 64px 27px 133px 27px;
+  }
+}

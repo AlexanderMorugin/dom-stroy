@@ -1,0 +1,13 @@
+.review__star {
+  width: 25px;
+  object-fit: contain;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px){
+  .review__star {
+    width: 14px;
+  }
+}

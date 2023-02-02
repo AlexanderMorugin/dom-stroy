@@ -1,0 +1,14 @@
+.review__stars {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px){
+  .review__stars {
+    margin-top: 12px
+  }
+}

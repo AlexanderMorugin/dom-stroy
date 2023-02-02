@@ -168,6 +168,49 @@
 @import url(../blocks/matcap/__middle-box/matcap__middle-box.css);
 @import url(../blocks/matcap/__credit-image/matcap__credit-image.css);
 
+@import url(../blocks/offer/offer.css);
+@import url(../blocks/offer/__container/offer__container.css);
+@import url(../blocks/offer/__title/offer__title.css);
+@import url(../blocks/offer/__buttons/offer__buttons.css);
+@import url(../blocks/offer/__button/offer__button.css);
+@import url(../blocks/offer/__cards/offer__cards.css);
+@import url(../blocks/offer/__card/offer__card.css);
+@import url(../blocks/offer/__card-image/offer__card-image.css);
+@import url(../blocks/offer/__card-data/offer__card-data.css);
+@import url(../blocks/offer/__card-title/offer__card-title.css);
+@import url(../blocks/offer/__card-settings/offer__card-settings.css);
+@import url(../blocks/offer/__card-size/offer__card-size.css);
+@import url(../blocks/offer/__card-area/offer__card-area.css);
+@import url(../blocks/offer/__card-rooms/offer__card-rooms.css);
+@import url(../blocks/offer/__card-size-param/offer__card-size-param.css);
+@import url(../blocks/offer/__card-area-param/offer__card-area-param.css);
+@import url(../blocks/offer/__card-rooms-param/offer__card-rooms-param.css);
+@import url(../blocks/offer/__card-price/offer__card-price.css);
+@import url(../blocks/offer/__button-bottom/offer__button-bottom.css);
+@import url(../blocks/offer/__slider-panel/offer__slider-panel.css);
+@import url(../blocks/offer/__slider-control/offer__slider-control.css);
+@import url(../blocks/offer/__slider-control/_type/offer__slider-control_type_right.css);
+@import url(../blocks/offer/__slider-control/_type/offer__slider-control_type_left.css);
+
+@import url(../blocks/review/review.css);
+@import url(../blocks/review/__title-box/review__title-box.css);
+@import url(../blocks/review/__title/review__title.css);
+@import url(../blocks/review/__circle/review__circle.css);
+@import url(../blocks/review/__cards/review__cards.css);
+@import url(../blocks/review/__card/review__card.css);
+@import url(../blocks/review/__card/_active/review__card_active.css);
+@import url(../blocks/review/__reviewer/review__reviewer.css);
+@import url(../blocks/review/__stars/review__stars.css);
+@import url(../blocks/review/__star/review__star.css);
+@import url(../blocks/review/__text-box/review__text-box.css);
+@import url(../blocks/review/__text/review__text.css);
+@import url(../blocks/review/__line/review__line.css);
+@import url(../blocks/review/__text-bottom/review__text-bottom.css);
+@import url(../blocks/review/__slider-panel/review__slider-panel.css);
+@import url(../blocks/review/__slider-control/review__slider-control.css);
+@import url(../blocks/review/__slider-control/_type/review__slider-control_type_left.css);
+@import url(../blocks/review/__slider-control/_type/review__slider-control_type_right.css);
+
 
 
 

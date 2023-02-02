@@ -1,0 +1,25 @@
+.offer__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 284px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 3px 4px 33px 0px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: .3s;
+  overflow: hidden;
+}
+
+.offer__card:hover {
+  box-shadow: 3px 4px 33px 0px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1024px){
+  .offer__card {
+    min-width: 284px;
+  }
+}

@@ -1,0 +1,5 @@
+.offer__card-rooms {
+  grid-area: rooms;
+  margin: 0;
+  padding: 0;
+}

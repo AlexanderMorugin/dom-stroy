@@ -1,0 +1,9 @@
+.review__circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #808080;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,17 @@
+.offer__card-settings {
+  display: grid;
+  grid-template-columns: 1fr 45px;
+  grid-template-areas:
+    "size size-param"
+    "area area-param"
+    "rooms rooms-param";
+  row-gap: 4px;
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Inter';
+  color: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  margin: 17px 0 0 0;
+  padding: 0;
+}

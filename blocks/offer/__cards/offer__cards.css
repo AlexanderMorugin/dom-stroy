@@ -1,0 +1,11 @@
+.offer__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 32px 0 0 0;
+  padding: 0;
+  list-style: none;
+  /* overflow: hidden; */
+}

@@ -1,0 +1,5 @@
+.offer__card-size {
+  grid-area: size;
+  margin: 0;
+  padding: 0;
+}

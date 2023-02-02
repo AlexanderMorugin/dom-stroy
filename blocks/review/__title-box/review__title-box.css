@@ -1,0 +1,23 @@
+.review__title-box {
+  position: absolute;
+  top: 72px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 112px;
+  box-sizing: border-box;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  z-index: 3;
+}
+
+@media screen and (max-width: 768px){
+  .review__title-box {
+    top: 50px;
+  }
+}
