@@ -1,4 +1,7 @@
 .matcap__slider-panel {
+  position: absolute;
+  bottom: 37px;
+  right: 78px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,4 +11,13 @@
   margin: 0;
   padding: 0;
   float: right;
+}
+
+@media screen and (max-width: 768px){
+  .matcap__slider-panel {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
 }

@@ -1,14 +1,42 @@
 .matcap__image {
   display: block;
-  width: 51%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: all 0.3s ease-in-out;
+
+  opacity: 0;
+  -webkit-animation-name: matcap__image;
+          animation-name: matcap__image;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-@media screen and (max-width: 768px) {
-  .matcap__image {
-    display: none;
+.matcap__image:hover {
+  transform: scale(1.25);
+}
+
+@-webkit-keyframes matcap__image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes matcap__image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

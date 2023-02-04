@@ -6,3 +6,7 @@
   padding: 0;
 }
 
+.matcap__container:not(.matcap__container_current) {
+  display: none;
+}
+

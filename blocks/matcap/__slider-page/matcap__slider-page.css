@@ -4,6 +4,54 @@
   font-weight: 700;
   font-family: 'Inter';
   color: #000;
-  margin: 0;
-  padding: 0;
+  text-align: right;
+  margin: 38px 0 0 0;
+  padding: 0 66px 0 0;
+
+  transform: translateY(100%);
+  opacity: 0;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 1024px){
+  .matcap__slider-page {
+    padding-right: 113px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .matcap__slider-page {
+    text-align: center;
+    margin-top: 62px;
+    padding-right: 0;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

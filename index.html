@@ -7,9 +7,12 @@
   <meta name="description" content="Учебный проект. Интернет-магазин домов ДомСтрой">
   <meta name="author" content="Александр Моругин">
   <meta name="keywords" content="html, css, javascript">
-  <title>Интернет-магазин домов ДомСтрой</title>
-  <link rel="stylesheet" type="text/css" href="./pages/index.css">
-  <script src="./page/index.js" defer></script>
+  <title>Интернет-магазин домов ДомСтрой</title>  
+  <link rel="stylesheet" type="text/css" href="./pages/index.css">  
+  <script src="./pages/index.js" defer></script>
+  <script src="./vendor/sliders/slider-advantage/slider-advantage.js" defer></script>
+  <script src="./vendor/sliders/slider-matcap/slider-matcap.js" defer></script>
+  
 </head>
 <body class="page">
   <header class="header">
@@ -176,54 +179,45 @@
 
     </section>
 
-    <section class="matcap">
-      <div class="matcap__container matcap__container_type_one">
-        <img class="matcap__image" src="./images/img-matcap.png" alt="">
-        <div class="matcap__block matcap__block_overlay">
+    <section class="matcap matcap_slider">
+      <!-- Content - 1 -->
+      <div class="matcap__container matcap__container_current matcap__container_type_one">
+        <div class="matcap__image-box">
+          <img class="matcap__image" src="./images/img-matcap.png" alt="">
+        </div>
+        <div class="matcap__block">
           <h2 class="matcap__block-title">Мы работаем с <span class="matcap__block-title matcap__block-title_span">материнским капиталом!</span></h2>
           <div class="matcap__middle-box">
             <button class="matcap__button" type="button">Оставить заявку</button>
           </div>
-          <div class="matcap__slider">
-            <div class="matcap__slider-panel">
-              <button class="matcap__slider-control slider__control" data-slide="prev">⟵
-                <span class="sr-only"></span>
-              </button>
-              <p class="matcap__slider-page">1/2</p>
-              <button class="matcap__slider-control slider__control" data-slide="next">⟶
-                <span class="sr-only"></span>
-              </button>
-            </div>
-          </div>          
+          <p class="matcap__slider-page">1/2</p>
         </div>
       </div>
-
+      <!-- Content - 2 -->
       <div class="matcap__container matcap__container_type_two">
-        <img class="matcap__image" src="./images/img-matcap-2.png" alt="">
-        <div class="matcap__block matcap__block_overlay">
+        <div class="matcap__image-box">
+          <img class="matcap__image" src="./images/img-matcap-2.png" alt="">
+        </div>
+        <div class="matcap__block">
           <h2 class="matcap__block-title">Строим <span class="matcap__block-title matcap__block-title_span">бани, беседки, бытовки и дома в кредит!</span></h2>
           <div class="matcap__middle-box">
             <button class="matcap__button" type="button">Оставить заявку</button>
             <img class="matcap__credit-image" src="./images/img-matcap-credit.png" alt="">
-          </div> 
-          <div class="matcap__slider">
-            <div class="matcap__slider-panel">
-              <button class="matcap__slider-control slider__control" data-slide="prev">⟵
-                <span class="sr-only"></span>
-              </button>
-              <p class="matcap__slider-page">2/2</p>
-              <button class="matcap__slider-control slider__control" data-slide="next">⟶
-                <span class="sr-only"></span>
-              </button>
-            </div>
-          </div>          
+          </div>
+          <p class="matcap__slider-page">2/2</p>
         </div>
-      </div>      
+      </div>
+      <!-- Slider Panel -->
+      <div class="matcap__slider-panel">
+        <button class="matcap__slider-control matcap__slider-control_type_prev" data-slide="prev">⟵</button>
+        <button class="matcap__slider-control matcap__slider-control_type_next" data-slide="next">⟶</button>
+      </div>
     </section>
 
     <section class="advantage">
       <div class="advantage__cards">
         <h2 class="advantage__title">Наши преимущества</h2>
+        <!-- Desktop Version -->
         <div class="advantage__card-box">
           <ul class="advantage__card-column">
             <li class="advantage__card">
@@ -287,15 +281,80 @@
           </ul>
         </div>
 
-        <div class="advantage__slider-panel">
-          <button class="advantage__slider-control advantage__slider-control_type_left slider__control" data-slide="prev">
-            <span class="sr-only"></span>
-          </button>
-          <button class="advantage__slider-control advantage__slider-control_type_right slider__control" data-slide="next">
-            <span class="sr-only"></span>
-          </button>
+        <!-- Mobile Version -->
+        <div class="advantage__slider slider" id="advantage__slider" data-slider data-autoplay="true" data-interval="5000">
+          <div class="advantage__slider-container slider__container">
+            <div class="advantage__card-box-mobile slider__items">
+              <!-- Content - 1 -->
+              <ul class="advantage__card-column slider__item">
+                <li class="advantage__card">
+                  <img class="advantage__card-image" src="./images/icon-advantage-certificate.svg" alt="">
+                  <div class="advantage__card-text">
+                    <h3 class="advantage__card-title">Работаем строго по договору</h3>
+                    <p class="advantage__card-subtitle">Стоимость строительсва фиксированная. И все наши обязательства прописаны в договоре.</p>
+                  </div>              
+                </li>
+                <li class="advantage__card">
+                  <img class="advantage__card-image" src="./images/icon-advantage-money.svg" alt="">
+                  <div class="advantage__card-text">
+                    <h3 class="advantage__card-title">Честная цена и понятные условия</h3>
+                    <p class="advantage__card-subtitle">Поэтапная оплата. Нет скрытых платежей и мелких шрифтов.</p>
+                  </div>              
+                </li>
+                <li class="advantage__card">
+                  <img class="advantage__card-image" src="./images/icon-advantage-man.svg" alt="">
+                  <div class="advantage__card-text">
+                    <h3 class="advantage__card-title">Фотоотчет процесса строительства</h3>
+                    <p class="advantage__card-subtitle">Бесплатный фото или видео отчет (по договорённости)</p>
+                  </div>              
+                </li>
+                <li class="advantage__card">
+                  <img class="advantage__card-image" src="./images/icon-advantage-certificate-2.svg" alt="">
+                  <div class="advantage__card-text">
+                    <h3 class="advantage__card-title">Более 7 лет опыта</h3>
+                    <p class="advantage__card-subtitle">Современное и качественное строительство, опытными бригадами.</p>
+                  </div>              
+                </li>
+              </ul>
+              <!-- Content - 2 -->
+              <ul class="advantage__card-column slider__item">
+                <li class="advantage__card">
+                  <img class="advantage__card-image" src="./images/icon-advantage-badge.svg" alt="">
+                  <div class="advantage__card-text">
+                    <h3 class="advantage__card-title">Выставка и собственное производство</h3>
+                    <p class="advantage__card-subtitle">Лучшее соотношение цены и качества. К нам возвращаются наши клиенты и рекомендуют своим знакомым.</p>
+                  </div>              
+                </li>
+                <li class="advantage__card">
+                  <img class="advantage__card-image" src="./images/icon-advantage-goal.svg" alt="">
+                  <div class="advantage__card-text">
+                    <h3 class="advantage__card-title">Экологически чистый материал</h3>
+                    <p class="advantage__card-subtitle">Сертифицированные, экологичные материалы от проверенных поставщиков.</p>
+                  </div>              
+                </li>
+                <li class="advantage__card">
+                  <img class="advantage__card-image" src="./images/icon-advantage-certificate-3.svg" alt="">
+                  <div class="advantage__card-text">
+                    <h3 class="advantage__card-title">Гарантийное обслуживание любой постройки</h3>
+                    <p class="advantage__card-subtitle">Даем гарантию не на словах.</p>
+                  </div>
+                </li>
+                <li class="advantage__card">
+                  <img class="advantage__card-image" src="./images/icon-advantage-quality.svg" alt="">
+                  <div class="advantage__card-text">
+                    <h3 class="advantage__card-title">Индивидуальные проекты</h3>
+                    <p class="advantage__card-subtitle">Возможны изменения проектов из каталога и строительство по индивидуальным планам.</p>
+                  </div>              
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Slider Panel -->
+          <div class="advantage__slider-panel">
+            <button class="advantage__slider-control advantage__slider-control_type_left slider__control" data-slide="prev"></button>
+            <button class="advantage__slider-control advantage__slider-control_type_right slider__control" data-slide="next"></button>
+          </div>
         </div>
-
       </div>
       <div class="advantage__vk">
         <div class="advantage__vk-text">
@@ -305,6 +364,7 @@
         <button class="advantage__vk-button" type="button">Подписаться на группу ВКонтакте</button>
       </div>
     </section>
+
 
     <section class="connect">
       <img class="connect__image" src="./images/img-connect.png" alt="Индивидуальное строение">

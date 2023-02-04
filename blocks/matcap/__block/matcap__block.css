@@ -1,9 +1,10 @@
 .matcap__block {
-  width: 100%;
+  width: 50%;
   background: #F1F1F6;
   box-sizing: border-box;
   margin: 0;
   padding: 79px 78px 48px 63px;
+  background-color: rgba(241, 241, 246, 0.5);
 }
 
 @media screen and (max-width: 1024px){
@@ -14,6 +15,8 @@
 
 @media screen and (max-width: 768px){
   .matcap__block {
+    width: 100%;
+    /* height: 798px; */
     padding: 91px 27px 49px 27px;
   }
 }

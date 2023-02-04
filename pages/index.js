@@ -1,3 +1,5 @@
+
+
 const headerMobileMenu = document.querySelector('.header__mobile-menu');
 const popupMenu = document.querySelector('.popup_menu');
 const popupMenuButtonClose = document.querySelector('.popup__menu-button-close')

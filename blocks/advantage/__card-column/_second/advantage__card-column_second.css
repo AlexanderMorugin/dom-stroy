@@ -1,9 +1,0 @@
-.advantage__card-column_second {
-
-}
-
-@media screen and (max-width: 768px) {
-  .advantage__card-column_second {
-    display: none;
-  }
-}

@@ -10,6 +10,14 @@
 
 @media screen and (max-width: 768px) {
   .advantage__card-column {
+    align-items: center;
     gap: 14px;
+    padding-left: 27px;
+    padding-right: 27px;
+
+    flex: 0 0 100%;
+    max-width: 100%;
+    user-select: none;
+    will-change: transform;
   }
 }

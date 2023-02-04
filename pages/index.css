@@ -103,13 +103,16 @@
 @import url(../blocks/advantage/__cards/advantage__cards.css);
 @import url(../blocks/advantage/__title/advantage__title.css);
 @import url(../blocks/advantage/__card-box/advantage__card-box.css);
+@import url(../blocks/advantage/__card-box-mobile/advantage__card-box-mobile.css);
 @import url(../blocks/advantage/__card-column/advantage__card-column.css);
-@import url(../blocks/advantage/__card-column/_second/advantage__card-column_second.css);
 @import url(../blocks/advantage/__card/advantage__card.css);
 @import url(../blocks/advantage/__card-text/advantage__card-text.css);
 @import url(../blocks/advantage/__card-title/advantage__card-title.css);
 @import url(../blocks/advantage/__card-subtitle/advantage__card-subtitle.css);
 @import url(../blocks/advantage/__card-image/advantage__card-image.css);
+@import url(../blocks/advantage/__slider/advantage__slider.css);
+@import url(../blocks/advantage/__slider-container/advantage__slider-container.css);
+
 @import url(../blocks/advantage/__slider-panel/advantage__slider-panel.css);
 @import url(../blocks/advantage/__slider-control/advantage__slider-control.css);
 @import url(../blocks/advantage/__slider-control/_type/advantage__slider-control_type_left.css);
@@ -155,13 +158,12 @@
 @import url(../blocks/matcap/__container/matcap__container.css);
 @import url(../blocks/matcap/__container/_type/matcap__container_type_one.css);
 @import url(../blocks/matcap/__container/_type/matcap__container_type_two.css);
+@import url(../blocks/matcap/__image-box/matcap__image-box.css);
 @import url(../blocks/matcap/__image/matcap__image.css);
 @import url(../blocks/matcap/__block/matcap__block.css);
-@import url(../blocks/matcap/__block/_overlay/matcap__block_overlay.css);
 @import url(../blocks/matcap/__block-title/matcap__block-title.css);
 @import url(../blocks/matcap/__block-title/_span/matcap__block-title_span.css);
 @import url(../blocks/matcap/__button/matcap__button.css);
-@import url(../blocks/matcap/__slider/matcap__slider.css);
 @import url(../blocks/matcap/__slider-panel/matcap__slider-panel.css);
 @import url(../blocks/matcap/__slider-control/matcap__slider-control.css);
 @import url(../blocks/matcap/__slider-page/matcap__slider-page.css);

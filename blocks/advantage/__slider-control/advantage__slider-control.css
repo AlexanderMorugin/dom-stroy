@@ -6,4 +6,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  opacity: .4;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.advantage__slider-control:hover {
+  opacity: .8;
 }

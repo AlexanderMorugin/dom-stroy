@@ -1,0 +1,13 @@
+.matcap__image-box {
+  width: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .matcap__image-box {
+    display: none;
+  }
+}
