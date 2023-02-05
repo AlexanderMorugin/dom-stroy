@@ -5,7 +5,7 @@
   max-width: 284px;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 3px 4px 33px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,11 +15,20 @@
 }
 
 .offer__card:hover {
-  box-shadow: 3px 4px 33px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 1024px){
-  .offer__card {
-    min-width: 284px;
+  .offer__card:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .offer__card:last-child {
+    display: flex;
+    flex: 0 0 100%;
+    user-select: none;
+    will-change: transform;
   }
 }

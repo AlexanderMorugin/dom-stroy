@@ -189,6 +189,10 @@
 @import url(../blocks/offer/__card-rooms-param/offer__card-rooms-param.css);
 @import url(../blocks/offer/__card-price/offer__card-price.css);
 @import url(../blocks/offer/__button-bottom/offer__button-bottom.css);
+@import url(../blocks/offer/__slider/offer__slider.css);
+@import url(../blocks/offer/__slider-mobile/offer__slider-mobile.css);
+@import url(../blocks/offer/__slider-container/offer__slider-container.css);
+@import url(../blocks/offer/__slider-items/offer__slider-items.css);
 @import url(../blocks/offer/__slider-panel/offer__slider-panel.css);
 @import url(../blocks/offer/__slider-control/offer__slider-control.css);
 @import url(../blocks/offer/__slider-control/_type/offer__slider-control_type_right.css);

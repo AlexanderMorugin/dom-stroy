@@ -13,7 +13,7 @@
   text-transform: uppercase;
   color: #fff;
   box-sizing: border-box;
-  margin: 32px 0 0 0;
+  margin: 5px 0 0 0;
   padding: 20px 50px;
   background-image: linear-gradient(#FFC239, #FFC239);
   background-repeat: no-repeat;
@@ -30,6 +30,6 @@
 
 @media screen and (max-width: 768px){
   .offer__button-bottom {
-    margin-top: 43px;
+    margin-top: 13px;
   }
 }

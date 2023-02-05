@@ -1,13 +1,11 @@
 class Slider {
-  static ATTRIBUTE = 'slider';
-  // static ATTRIBUTE = 'advantage__slider';  
+  static ATTRIBUTE = 'slider';  
   static EVENT_NAME = 'slider-start';
   static CLASS_CONTROL = 'slider__control';
   static CLASS_CONTROL_HIDE = 'slider__control_hidden';
   static CLASS_ITEM_ACTIVE = 'slider__item_active';
   static CLASS_INDICATOR_ACTIVE = 'slider__indicator_active';
   static CLASS_CONTAINER = 'slider__container';
-  // static CLASS_CONTAINER = 'advantage__slider-container';
   
   static CLASS_ITEM = 'slider__item';
   static CLASS_ITEMS = 'slider__items';

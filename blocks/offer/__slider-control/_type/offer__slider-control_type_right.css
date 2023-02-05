@@ -4,3 +4,9 @@
   background-repeat: no-repeat;
   margin-right: 47px;
 }
+
+@media screen and (max-width: 1024px){
+  .offer__slider-control_type_right {
+    margin-right: 27px;
+  }
+}

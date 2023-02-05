@@ -1,6 +1,5 @@
-.offer__container {
+.offer__slider {
   display: flex;
-  flex-direction: column;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +7,7 @@
 }
 
 @media screen and (max-width: 768px){
-  .offer__container {
-    padding: 0;
+  .offer__slider {
+    display: none;
   }
 }

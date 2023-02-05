@@ -7,14 +7,32 @@
   width: 100%;  
 }
 
-@media screen and (max-width: 1101px){
+@media screen and (max-width: 1067px){
   .offer__slider-panel {
     top: 470px;
   }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
   .offer__slider-panel {
-    display: none;
+    top: 422px;
+  }
+}
+
+@media screen and (max-width: 515px){
+  .offer__slider-panel {
+    top: 478px;
+  }
+}
+
+@media screen and (max-width: 455px){
+  .offer__slider-panel {
+    top: 514px;
+  }
+}
+
+@media screen and (max-width: 372px){
+  .offer__slider-panel {
+    top: 570px;
   }
 }

@@ -5,12 +5,13 @@
   row-gap: 13px;
   box-sizing: border-box;
   margin: 32px 0 0 0;
-  padding: 0;
+  padding: 0 0 0 27px;
   list-style: none;
 }
 
 @media screen and (max-width: 768px){
   .offer__buttons {
     column-gap: 5px;
+    padding-left: 0;
   }
 }
