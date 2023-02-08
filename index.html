@@ -8,10 +8,11 @@
   <meta name="author" content="Александр Моругин">
   <meta name="keywords" content="html, css, javascript">
   <title>Интернет-магазин домов ДомСтрой</title>  
-  <link rel="stylesheet" type="text/css" href="./pages/index.css">  
+  <link rel="stylesheet" type="text/css" href="./pages/index.css">
   <script src="./pages/index.js" defer></script>
   <script src="./vendor/sliders/slider-vanila/slider-vanila.js" defer></script>
   <script src="./vendor/sliders/slider-matcap/slider-matcap.js" defer></script>
+  <script src="./vendor/sliders/slider-review/slider-review.js" defer></script>
   
 </head>
 <body class="page">
@@ -97,21 +98,23 @@
       <div class="offer__container">
         <h2 class="offer__title">Предложения для вас</h2>
         <ul class="offer__buttons">
-          <li><button class="offer__button" type="button">Каркасные дома</button></li>
-          <li><button class="offer__button" type="button">Бани</button></li>
-          <li><button class="offer__button" type="button">Беседки</button></li>
-          <li><button class="offer__button" type="button">Бытовки</button></li>
-          <li><button class="offer__button" type="button">Хоз. постройки</button></li>
+          <li><button class="offer__button button__house offer__button_active" type="button" data-filter="filter__house">Каркасные дома</button></li>
+          <li><button class="offer__button button__sauna" type="button" data-filter="filter__sauna">Бани</button></li>
+          <li><button class="offer__button button__pavilion" type="button" data-filter="filter__pavilion">Беседки</button></li>
+          <li><button class="offer__button button__change-house" type="button" data-filter="filter__change-house">Бытовки</button></li>
+          <li><button class="offer__button button__outbuilding" type="button" data-filter="filter__outbuilding">Хоз. постройки</button></li>
         </ul>
 
-        <div class="offer__slider slider" id="offer__slider" data-slider data-autoplay="true" data-interval="5000">
+        <!-- Slider Desktop -->
+        <div class="offer__slider slider" data-slider data-autoplay="true" data-interval="5000">
           <div class="offer__slider-container slider__container">
             <div class="offer__slider-items slider__items">
-              <!-- Desktop Version -->
-              <!-- Content - 1 -->
-              <ul class="offer__cards slider__item">                
-                <li class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-1.png" alt="">
+              <!-- Slide 1 -->
+              <ul class="offer__cards slider__item">
+
+                <!-- Каркасные дома -->
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-1.png" alt="Каркасный дом">
                   <div class="offer__card-data">
                     <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
                     <div class="offer__card-settings">
@@ -125,10 +128,372 @@
                     <p class="offer__card-price">940 000 ₽</p>
                   </div>                  
                 </li>
-                <li class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-2.png" alt="">
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-2.png" alt="Каркасный дом">
                   <div class="offer__card-data">
                     <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-3.png" alt="Каркасный дом">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-4.png" alt="Каркасный дом">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+
+                <!-- Бани -->
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-1.jpeg" alt="Баня">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Баня с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-2.jpeg" alt="Баня">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Баня с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-3.jpeg" alt="Баня">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Баня с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-4.jpeg" alt="Баня">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Баня с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+
+                <!-- Беседки -->
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-1.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-2.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-3.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-4.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+
+                <!-- Бытовки -->
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-1.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-2.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-3.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-4.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+
+                <!-- Хоз. постройки -->
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-1.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-2.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-3.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-4.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+
+              </ul>
+              
+              <!-- Slide 2 -->
+              <ul class="offer__cards slider__item">
+
+                <!-- Каркасные дома -->
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-2.png" alt="Каркасный дом">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Каркасный дом с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">5х8 м</p>
+                      <p class="offer__card-area-param">54.9 м2</p>
+                      <p class="offer__card-rooms-param">2 шт</p>
+                    </div>
+                    <p class="offer__card-price">640 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-4.png" alt="Каркасный дом">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Каркасный дом с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">5х8 м</p>
+                      <p class="offer__card-area-param">54.9 м2</p>
+                      <p class="offer__card-rooms-param">2 шт</p>
+                    </div>
+                    <p class="offer__card-price">640 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-1.png" alt="Каркасный дом">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Каркасный дом с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">5х8 м</p>
+                      <p class="offer__card-area-param">54.9 м2</p>
+                      <p class="offer__card-rooms-param">2 шт</p>
+                    </div>
+                    <p class="offer__card-price">640 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-3.png" alt="Каркасный дом">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Каркасный дом с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">5х8 м</p>
+                      <p class="offer__card-area-param">54.9 м2</p>
+                      <p class="offer__card-rooms-param">2 шт</p>
+                    </div>
+                    <p class="offer__card-price">640 000 ₽</p>
+                  </div>                  
+                </li>
+
+                <!-- Бани -->
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-3.jpeg" alt="Баня">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Баня с балконом LK-3</h3>
                     <div class="offer__card-settings">
                       <p class="offer__card-size">Размер:</p>
                       <p class="offer__card-area">Площадь:</p>
@@ -140,10 +505,10 @@
                     <p class="offer__card-price">640 000 ₽</p>
                   </div>                  
                 </li>
-                <li class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-3.png" alt="">
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-4.jpeg" alt="Баня">
                   <div class="offer__card-data">
-                    <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
+                    <h3 class="offer__card-title">Баня с балконом LK-3</h3>
                     <div class="offer__card-settings">
                       <p class="offer__card-size">Размер:</p>
                       <p class="offer__card-area">Площадь:</p>
@@ -152,13 +517,13 @@
                       <p class="offer__card-area-param">34.8 м2</p>
                       <p class="offer__card-rooms-param">3 шт</p>
                     </div>
-                    <p class="offer__card-price">740 000 ₽</p>
+                    <p class="offer__card-price">640 000 ₽</p>
                   </div>                  
                 </li>
-                <li class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-4.png" alt="">
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-1.jpeg" alt="Баня">
                   <div class="offer__card-data">
-                    <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
+                    <h3 class="offer__card-title">Баня с балконом LK-3</h3>
                     <div class="offer__card-settings">
                       <p class="offer__card-size">Размер:</p>
                       <p class="offer__card-area">Площадь:</p>
@@ -167,46 +532,184 @@
                       <p class="offer__card-area-param">34.8 м2</p>
                       <p class="offer__card-rooms-param">3 шт</p>
                     </div>
-                    <p class="offer__card-price">840 000 ₽</p>
-                  </div>                  
-                </li>                
-              </ul>
-              <!-- Content - 2 -->
-              <ul class="offer__cards slider__item">
-                <li class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-2.png" alt="">
-                  <div class="offer__card-data">
-                    <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
-                    <div class="offer__card-settings">
-                      <p class="offer__card-size">Размер:</p>
-                      <p class="offer__card-area">Площадь:</p>
-                      <p class="offer__card-rooms">Количество комнат:</p>
-                      <p class="offer__card-size-param">4х6 м</p>
-                      <p class="offer__card-area-param">34.8 м2</p>
-                      <p class="offer__card-rooms-param">3 шт</p>
-                    </div>
-                    <p class="offer__card-price">140 000 ₽</p>
-                  </div>
-                </li>
-                <li class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-3.png" alt="">
-                  <div class="offer__card-data">
-                    <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
-                    <div class="offer__card-settings">
-                      <p class="offer__card-size">Размер:</p>
-                      <p class="offer__card-area">Площадь:</p>
-                      <p class="offer__card-rooms">Количество комнат:</p>
-                      <p class="offer__card-size-param">4х6 м</p>
-                      <p class="offer__card-area-param">34.8 м2</p>
-                      <p class="offer__card-rooms-param">3 шт</p>
-                    </div>
-                    <p class="offer__card-price">240 000 ₽</p>
+                    <p class="offer__card-price">640 000 ₽</p>
                   </div>                  
                 </li>
-                <li class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-4.png" alt="">
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-2.jpeg" alt="Баня">
                   <div class="offer__card-data">
-                    <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
+                    <h3 class="offer__card-title">Баня с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">640 000 ₽</p>
+                  </div>                  
+                </li>
+
+                <!-- Беседки -->
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-3.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-4.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-1.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-2.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+                
+                <!-- Бытовки -->
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-3.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-4.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-1.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-2.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+
+                <!-- Хоз. постройки -->
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-3.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">440 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-4.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">440 000 ₽</p>
+                  </div>                  
+                </li>
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-1.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-3</h3>
                     <div class="offer__card-settings">
                       <p class="offer__card-size">Размер:</p>
                       <p class="offer__card-area">Площадь:</p>
@@ -218,10 +721,356 @@
                     <p class="offer__card-price">340 000 ₽</p>
                   </div>                  
                 </li>
-                <li class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-1.png" alt="">
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-2.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">240 000 ₽</p>
+                  </div>                  
+                </li>
+
+              </ul>
+            </div>
+          </div>
+    
+          <div class="offer__slider-panel">
+            <button class="offer__slider-control offer__slider-control_type_left slider__control" data-slide="prev"></button>
+            <button class="offer__slider-control offer__slider-control_type_right slider__control" data-slide="next"></button>
+          </div>
+        </div>
+
+        <!-- Mobile Version -->
+        <div class="offer__slider-mobile slider" data-slider data-autoplay="true" data-interval="5000">
+          <div class="offer__slider-container slider__container">
+            <div class="offer__slider-items slider__items">
+              <!-- Content - 1 -->
+              <ul class="offer__cards slider__item">
+                <!-- Каркасные дома -->               
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-1.png" alt="Каркасный дом">
                   <div class="offer__card-data">
                     <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Бани -->
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-1.jpeg" alt="Баня">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Баня с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Беседки -->
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-1.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Бытовки -->
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-1.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Хоз. постройки -->
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-1.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-2</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">940 000 ₽</p>
+                  </div>                  
+                </li>
+              </ul>
+              <!-- Content - 2 -->
+              <ul class="offer__cards slider__item">
+                <!-- Каркасные дома -->
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-2.png" alt="Каркасный дом">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Каркасный дом с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">640 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Бани -->
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-2.jpeg" alt="Баня">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Баня с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">640 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Беседки -->
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-2.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">640 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Бытовки -->
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-2.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">640 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Хоз. постройки -->
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-2.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-3</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">640 000 ₽</p>
+                  </div>                  
+                </li>
+              </ul>
+              <!-- Content - 3 -->
+              <ul class="offer__cards slider__item">
+                <!-- Каркасные дома -->             
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-3.png" alt="Каркасный дом">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Каркасный дом с балконом LK-4</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Бани -->
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-3.jpeg" alt="Баня">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Баня с балконом LK-4</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Беседки -->
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-3.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-4</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Бытовки -->
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-3.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-4</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Хоз. постройки -->
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-3.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-4</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">540 000 ₽</p>
+                  </div>                  
+                </li>
+              </ul>
+              <!-- Content - 4 -->
+              <ul class="offer__cards slider__item">
+                <!-- Каркасные дома -->
+                <li class="offer__card filter__house offer__card_active">
+                  <img class="offer__card-image" src="./images/img-house-4.png" alt="Каркасный дом">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Каркасный дом с балконом LK-5</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">440 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Бани -->
+                <li class="offer__card filter__sauna">
+                  <img class="offer__card-image" src="./images/img-sauna-4.jpeg" alt="Баня">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Баня с балконом LK-5</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">440 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Беседки -->
+                <li class="offer__card filter__pavilion">
+                  <img class="offer__card-image" src="./images/img-pavilion-4.jpg" alt="Беседка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Беседка с балконом LK-5</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">440 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Бытовки -->
+                <li class="offer__card filter__change-house">
+                  <img class="offer__card-image" src="./images/img-change-house-4.jpg" alt="Бытовка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Бытовка с балконом LK-5</h3>
+                    <div class="offer__card-settings">
+                      <p class="offer__card-size">Размер:</p>
+                      <p class="offer__card-area">Площадь:</p>
+                      <p class="offer__card-rooms">Количество комнат:</p>
+                      <p class="offer__card-size-param">4х6 м</p>
+                      <p class="offer__card-area-param">34.8 м2</p>
+                      <p class="offer__card-rooms-param">3 шт</p>
+                    </div>
+                    <p class="offer__card-price">440 000 ₽</p>
+                  </div>                  
+                </li>
+                <!-- Хоз. постройки -->
+                <li class="offer__card filter__outbuilding">
+                  <img class="offer__card-image" src="./images/img-outbuilding-4.jpg" alt="Хоз. постройка">
+                  <div class="offer__card-data">
+                    <h3 class="offer__card-title">Хоз. постройка с балконом LK-5</h3>
                     <div class="offer__card-settings">
                       <p class="offer__card-size">Размер:</p>
                       <p class="offer__card-area">Площадь:</p>
@@ -236,97 +1085,13 @@
               </ul>
             </div>
           </div>
-          <!-- Slider Panel -->        
-          <div class="offer__slider-panel">
-            <button class="offer__slider-control offer__slider-control_type_left slider__control" data-slide="prev"></button>
-            <button class="offer__slider-control offer__slider-control_type_right slider__control" data-slide="next"></button>
-          </div>
-        </div>
-        <!-- Конец слайдера-->
-        <!-- Mobile Version -->
-        <div class="offer__slider-mobile slider" id="offer__slider" data-slider data-autoplay="true" data-interval="5000">
-          <div class="offer__slider-container slider__container">
-            <div class="offer__slider-items slider__items">
-              <!-- Content - 1 -->
-              <div class="offer__cards slider__item">                
-                <div class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-1.png" alt="">
-                  <div class="offer__card-data">
-                    <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
-                    <div class="offer__card-settings">
-                      <p class="offer__card-size">Размер:</p>
-                      <p class="offer__card-area">Площадь:</p>
-                      <p class="offer__card-rooms">Количество комнат:</p>
-                      <p class="offer__card-size-param">4х6 м</p>
-                      <p class="offer__card-area-param">34.8 м2</p>
-                      <p class="offer__card-rooms-param">3 шт</p>
-                    </div>
-                    <p class="offer__card-price">940 000 ₽</p>
-                  </div>                  
-                </div>
-              </div>
-              <!-- Content - 2 -->
-              <div class="offer__cards slider__item">                
-                <div class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-2.png" alt="">
-                  <div class="offer__card-data">
-                    <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
-                    <div class="offer__card-settings">
-                      <p class="offer__card-size">Размер:</p>
-                      <p class="offer__card-area">Площадь:</p>
-                      <p class="offer__card-rooms">Количество комнат:</p>
-                      <p class="offer__card-size-param">4х6 м</p>
-                      <p class="offer__card-area-param">34.8 м2</p>
-                      <p class="offer__card-rooms-param">3 шт</p>
-                    </div>
-                    <p class="offer__card-price">940 000 ₽</p>
-                  </div>                  
-                </div>
-              </div>
-              <!-- Content - 3 -->
-              <div class="offer__cards slider__item">                
-                <div class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-3.png" alt="">
-                  <div class="offer__card-data">
-                    <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
-                    <div class="offer__card-settings">
-                      <p class="offer__card-size">Размер:</p>
-                      <p class="offer__card-area">Площадь:</p>
-                      <p class="offer__card-rooms">Количество комнат:</p>
-                      <p class="offer__card-size-param">4х6 м</p>
-                      <p class="offer__card-area-param">34.8 м2</p>
-                      <p class="offer__card-rooms-param">3 шт</p>
-                    </div>
-                    <p class="offer__card-price">940 000 ₽</p>
-                  </div>                  
-                </div>
-              </div>
-              <!-- Content - 4 -->
-              <div class="offer__cards slider__item">                
-                <div class="offer__card">
-                  <img class="offer__card-image" src="./images/img-house-4.png" alt="">
-                  <div class="offer__card-data">
-                    <h3 class="offer__card-title">Каркасный дом с балконом LK-2</h3>
-                    <div class="offer__card-settings">
-                      <p class="offer__card-size">Размер:</p>
-                      <p class="offer__card-area">Площадь:</p>
-                      <p class="offer__card-rooms">Количество комнат:</p>
-                      <p class="offer__card-size-param">4х6 м</p>
-                      <p class="offer__card-area-param">34.8 м2</p>
-                      <p class="offer__card-rooms-param">3 шт</p>
-                    </div>
-                    <p class="offer__card-price">940 000 ₽</p>
-                  </div>                  
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- Slider Panel -->
           <div class="offer__slider-panel">
             <button class="offer__slider-control offer__slider-control_type_left slider__control" data-slide="prev"></button>
             <button class="offer__slider-control offer__slider-control_type_right slider__control" data-slide="next"></button>
           </div>
-        </div>         
+        </div>  
+
         <button class="offer__button-bottom" type="button">Смотреть все проекты</button>
       </div>
     </section>
@@ -540,84 +1305,156 @@
         <h2 class="review__title">Отзывы</h2>
         <div class="review__circle"></div>
       </div>
-      <ul class="review__cards">
-        <li class="review__card">
-          <h3 class="review__reviewer">Джон Джон Джон</h3>
-          <div class="review__stars">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
+      <div class="review__cards">
+        <div class="slider-container">
+          <div class="slider-content">
+            <div class="slider-single">
+              <div class="review__card slider-single-image">
+                <h3 class="review__reviewer">Иван Иванов</h3>
+                <div class="review__stars">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                </div>
+                <div class="review__text-box">
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+                  </p>
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. 
+                  </p>
+                </div>
+                <div class="review__line"></div>
+                <p class="review__text-bottom">Изготовление каркасного дома с балконом</p>           
+              </div>
+            </div>    
+            <div class="slider-single">
+              <div class="slider-single-image review__card">
+                <h3 class="review__reviewer">Петр Петров</h3>
+                <div class="review__stars">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                </div>
+                <div class="review__text-box">
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+                  </p>
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. 
+                  </p>
+                </div>
+                <div class="review__line"></div>
+                <p class="review__text-bottom">Изготовление каркасного дома с балконом</p>           
+              </div>
+            </div>    
+            <div class="slider-single">
+              <div class="review__card slider-single-image">
+                <h3 class="review__reviewer">Сергей Сергеев</h3>
+                <div class="review__stars">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                </div>
+                <div class="review__text-box">
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+                  </p>
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. 
+                  </p>
+                </div>
+                <div class="review__line"></div>
+                <p class="review__text-bottom">Изготовление каркасного дома с балконом</p>           
+              </div>
+            </div>    
+            <div class="slider-single">
+              <div class="review__card slider-single-image">
+                <h3 class="review__reviewer">Алексей Алексеев</h3>
+                <div class="review__stars">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                </div>
+                <div class="review__text-box">
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+                  </p>
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. 
+                  </p>
+                </div>
+                <div class="review__line"></div>
+                <p class="review__text-bottom">Изготовление каркасного дома с балконом</p>           
+              </div>
+            </div>    
+            <div class="slider-single">
+              <div class="review__card slider-single-image">
+                <h3 class="review__reviewer">Николай Николаев</h3>
+                <div class="review__stars">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                </div>
+                <div class="review__text-box">
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+                  </p>
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. 
+                  </p>
+                </div>
+                <div class="review__line"></div>
+                <p class="review__text-bottom">Изготовление каркасного дома с балконом</p>           
+              </div>
+            </div>    
+            <div class="slider-single">
+              <div class="review__card slider-single-image">
+                <h3 class="review__reviewer">Дмитрий Дмитриев</h3>
+                <div class="review__stars">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                  <img class="review__star" src="./images/icon-review-star.svg" alt="">
+                </div>
+                <div class="review__text-box">
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+                  </p>
+                  <p class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. 
+                  </p>
+                </div>
+                <div class="review__line"></div>
+                <p class="review__text-bottom">Изготовление каркасного дома с балконом</p>           
+              </div>                
+            </div>
           </div>
-          <div class="review__text-box">
-            <p class="review__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
-            </p>
-            <p class="review__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. 
-            </p>
-          </div>
-          <div class="review__line"></div>
-          <p class="review__text-bottom">Изготовление каркасного дома с балконом</p>           
-        </li>
-        <li class="review__card review__card_active">
-          <h3 class="review__reviewer">Джон Джон Джон</h3>
-          <div class="review__stars">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-          </div>
-          <div class="review__text-box">
-            <p class="review__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
-            </p>
-            <p class="review__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. 
-            </p>
-          </div>
-          <div class="review__line"></div>
-          <p class="review__text-bottom">Изготовление каркасного дома с балконом</p> 
-        </li>
-        <li class="review__card">
-          <h3 class="review__reviewer">Джон Джон Джон</h3>
-          <div class="review__stars">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-            <img class="review__star" src="./images/icon-review-star.svg" alt="">
-          </div>
-          <div class="review__text-box">
-            <p class="review__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
-            </p>
-            <p class="review__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. 
-            </p>
-          </div>
-          <div class="review__line"></div>
-          <p class="review__text-bottom">Изготовление каркасного дома с балконом</p>  
-        </li>
-      </ul>
-
-      <div class="review__slider-panel">
-        <button class="review__slider-control review__slider-control_type_left slider__control" data-slide="prev">
-          <span class="sr-only"></span>
-        </button>
-        <button class="review__slider-control review__slider-control_type_right slider__control" data-slide="next">
-          <span class="sr-only"></span>
-        </button>
+        </div>
       </div>
-
     </section>
 
     <section class="contact">
@@ -730,7 +1567,7 @@
       </div>
     </nav>
     <div class="footer__bottom">
-      <p class="footer__copyright">Copyright © “ДОМСТРОЙ” 2023. Все права защищены.</p>
+      <p class="footer__copyright">Александр Моругин. Учебный проект. 2023 г.</p>
       <ul class="footer__bottom-links">
         <li><a class="footer__bottom-link" href="#">Политика конфиденциальности</a></li>
         <li><a class="footer__bottom-link" href="#">Пользовательское соглашение</a></li>

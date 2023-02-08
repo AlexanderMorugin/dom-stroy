@@ -1,5 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/font.css);
+@import url(../vendor/sliders/slider-review/slider-review.css);
 
 @import url(../blocks/page/page.css);
 
@@ -175,8 +176,10 @@
 @import url(../blocks/offer/__title/offer__title.css);
 @import url(../blocks/offer/__buttons/offer__buttons.css);
 @import url(../blocks/offer/__button/offer__button.css);
+@import url(../blocks/offer/__button/_active/offer__button_active.css);
 @import url(../blocks/offer/__cards/offer__cards.css);
 @import url(../blocks/offer/__card/offer__card.css);
+@import url(../blocks/offer/__card/_active/offer__card_active.css);
 @import url(../blocks/offer/__card-image/offer__card-image.css);
 @import url(../blocks/offer/__card-data/offer__card-data.css);
 @import url(../blocks/offer/__card-title/offer__card-title.css);
@@ -204,7 +207,6 @@
 @import url(../blocks/review/__circle/review__circle.css);
 @import url(../blocks/review/__cards/review__cards.css);
 @import url(../blocks/review/__card/review__card.css);
-@import url(../blocks/review/__card/_active/review__card_active.css);
 @import url(../blocks/review/__reviewer/review__reviewer.css);
 @import url(../blocks/review/__stars/review__stars.css);
 @import url(../blocks/review/__star/review__star.css);
@@ -212,10 +214,6 @@
 @import url(../blocks/review/__text/review__text.css);
 @import url(../blocks/review/__line/review__line.css);
 @import url(../blocks/review/__text-bottom/review__text-bottom.css);
-@import url(../blocks/review/__slider-panel/review__slider-panel.css);
-@import url(../blocks/review/__slider-control/review__slider-control.css);
-@import url(../blocks/review/__slider-control/_type/review__slider-control_type_left.css);
-@import url(../blocks/review/__slider-control/_type/review__slider-control_type_right.css);
 
 
 

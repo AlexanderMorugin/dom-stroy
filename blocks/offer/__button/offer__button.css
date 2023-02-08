@@ -7,20 +7,21 @@
   font-size: 20px;
   font-weight: 600;
   font-family: 'Inter';
-  color: #212864;
+  color: rgba(33, 40, 100, .6);
   box-sizing: border-box;
   margin: 0;
   padding: 12px 35px;
   background-image: linear-gradient(#FFC239, #FFC239);
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  transition: .3s;
+  transition: .2s;
   cursor: pointer;
 }
 
 .offer__button:hover {
-  background-size: 100% 100%;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  /* background-size: 100% 100%; */
+  color: rgba(33, 40, 100, 1);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 768px){

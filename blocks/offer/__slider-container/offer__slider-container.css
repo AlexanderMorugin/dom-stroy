@@ -1,5 +1,6 @@
 .offer__slider-container {
   display: flex;
+  flex-direction: column;
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
@@ -7,8 +8,8 @@
   padding: 0;
 }
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
   .offer__slider-container {
     flex-direction: column;
   }
-}
+} */
