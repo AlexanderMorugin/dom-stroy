@@ -1,0 +1,11 @@
+.calculate__subtitle {
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 490px;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,10 @@
+.crumbs__arrow {
+  width: 6px;
+  height: 8px;
+  background: url("../../../images/icon-crumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

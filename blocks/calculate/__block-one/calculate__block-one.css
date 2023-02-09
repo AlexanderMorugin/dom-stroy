@@ -1,0 +1,14 @@
+.calculate__block-one {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .calculate__block-one {
+    gap: 26px;
+  }
+}

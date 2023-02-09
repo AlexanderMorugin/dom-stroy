@@ -1,0 +1,12 @@
+.catalog__button_type_sauna {
+  grid-area: sauna;
+  background: url("../../../../images/img-catalog-sauna.png");
+}
+
+@media screen and (max-width: 768px) {
+  .catalog__button_type_sauna {
+    background: url("../../../../images/img-catalog-sauna-mobile.png");
+    background-position: center;
+    background-size: cover;
+  }
+}

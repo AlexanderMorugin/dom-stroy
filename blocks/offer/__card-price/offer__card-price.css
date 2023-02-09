@@ -7,3 +7,19 @@
   margin: 28px 0 0 0;
   padding: 0;
 }
+
+@media screen and (max-width: 1056px) {
+  .offer__card-price {
+    line-height: 22px;
+    font-size: 18px;
+    margin-top: 18px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer__card-price {
+    line-height: 27px;
+    font-size: 22px;
+    margin-top: 28px
+  }
+}

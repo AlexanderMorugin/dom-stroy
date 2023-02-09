@@ -1,0 +1,17 @@
+.calculate {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 339px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 81px 134px 81px 84px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .calculate {
+    padding: 63px 27px 96px 27px;
+  }
+}

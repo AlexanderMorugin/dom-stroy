@@ -1,0 +1,38 @@
+.catalog__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 237px;
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.catalog__button:hover {
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.4);
+  animation: bounce .6s;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	80% {
+		transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}

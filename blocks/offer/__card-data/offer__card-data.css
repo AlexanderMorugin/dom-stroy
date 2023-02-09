@@ -5,3 +5,15 @@
   margin: 0;
   padding: 18px 20px 35px 20px;
 }
+
+@media screen and (max-width: 1056px) {
+  .offer__card-data {
+    padding: 18px 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer__card-data {
+    padding: 18px 20px 35px 20px;
+  }
+}

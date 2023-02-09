@@ -1,0 +1,26 @@
+.catalog__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "house house"
+    "sauna pavilion"
+    "change-house outbuilding";
+  gap: 20px;
+  box-sizing: border-box;
+  margin: 40px 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .catalog__buttons {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "house"
+      "sauna"
+      "pavilion"
+      "change-house"
+      "outbuilding";
+    gap: 15px;
+    margin: 35px 0 17px 0;
+  }
+}

@@ -7,3 +7,17 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 1056px) {
+  .offer__card-title {
+    line-height: 17px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer__card-title {
+    line-height: 19px;
+    font-size: 18px;
+  }
+}

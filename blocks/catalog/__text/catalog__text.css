@@ -1,0 +1,16 @@
+.catalog__text {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  color: rgba(32, 32, 32, 0.8);
+  margin: 18px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .catalog__text {
+    line-height: 17px;
+    font-size: 14px;
+  }
+}

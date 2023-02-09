@@ -24,11 +24,10 @@
   }
 } */
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
   .offer__card:last-child {
-    /* display: flex; */
     flex: 0 0 100%;
     user-select: none;
     will-change: transform;
   }
-}
+} */

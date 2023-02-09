@@ -3,6 +3,7 @@
 @import url(../vendor/sliders/slider-review/slider-review.css);
 
 @import url(../blocks/page/page.css);
+@import url(../blocks/content/content.css);
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__container/header__container.css);
@@ -215,9 +216,41 @@
 @import url(../blocks/review/__line/review__line.css);
 @import url(../blocks/review/__text-bottom/review__text-bottom.css);
 
+@import url(../blocks/crumbs/crumbs.css);
+@import url(../blocks/crumbs/__text/crumbs__text.css);
+@import url(../blocks/crumbs/__text/_link/crumbs__text_link.css);
+@import url(../blocks/crumbs/__arrow/crumbs__arrow.css);
+
+@import url(../blocks/catalog/catalog.css);
+@import url(../blocks/catalog/__title/catalog__title.css);
+@import url(../blocks/catalog/__text/catalog__text.css);
+@import url(../blocks/catalog/__buttons/catalog__buttons.css);
+@import url(../blocks/catalog/__button/catalog__button.css);
+@import url(../blocks/catalog/__button/_type/catalog__button_type_change-house.css);
+@import url(../blocks/catalog/__button/_type/catalog__button_type_house.css);
+@import url(../blocks/catalog/__button/_type/catalog__button_type_outbuilding.css);
+@import url(../blocks/catalog/__button/_type/catalog__button_type_pavilion.css);
+@import url(../blocks/catalog/__button/_type/catalog__button_type_sauna.css);
+@import url(../blocks/catalog/__button-overlay/catalog__button-overlay.css);
+@import url(../blocks/catalog/__button-text/catalog__button-text.css);
+@import url(../blocks/catalog/__button-text/_fade/catalog__button-text_fade_one.css);
+@import url(../blocks/catalog/__button-text/_fade/catalog__button-text_fade_two.css);
+@import url(../blocks/catalog/__button-text/_fade/catalog__button-text_fade_three.css);
+@import url(../blocks/catalog/__button-text/_fade/catalog__button-text_fade_four.css);
+@import url(../blocks/catalog/__button-text/_fade/catalog__button-text_fade_five.css);
+
+@import url(../blocks/calculate/calculate.css);
+@import url(../blocks/calculate/__container/calculate__container.css);
+@import url(../blocks/calculate/__overlay/calculate__overlay.css);
+@import url(../blocks/calculate/__blocks/calculate__blocks.css);
+@import url(../blocks/calculate/__block-one/calculate__block-one.css);
+@import url(../blocks/calculate/__block-two/calculate__block-two.css);
+@import url(../blocks/calculate/__title/calculate__title.css);
+@import url(../blocks/calculate/__title/_span/calculate__title_span.css);
+@import url(../blocks/calculate/__subtitle/calculate__subtitle.css);
+@import url(../blocks/calculate/__button/calculate__button.css);
 
 
 
 
-
-/* * { outline: 1px solid red; } */
+* { outline: 1px solid red; }

@@ -1,0 +1,12 @@
+.catalog__button_type_pavilion {
+  grid-area: pavilion;
+  background: url("../../../../images/img-catalog-pavilion.png");
+}
+
+@media screen and (max-width: 768px) {
+  .catalog__button_type_pavilion {
+    background: url("../../../../images/img-catalog-pavilion-mobile.png");
+    background-position: center;
+    background-size: cover;
+  }
+}

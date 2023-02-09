@@ -1,5 +1,6 @@
 .offer__cards {
   display: flex;
+  justify-content: center;
   gap: 20px;
   width: 100%;
   box-sizing: border-box;
@@ -8,18 +9,4 @@
   list-style: none;
   flex: 0 0 100%;
   max-width: 100%;
-  /* user-select: none;
-  will-change: transform; */
-}
-
-/* @media screen and (max-width: 1024px) {
-  .offer__cards {
-    justify-content: left;
-  }
-} */
-
-@media screen and (max-width: 768px) {
-  .offer__cards {
-    justify-content: center;
-  }
 }

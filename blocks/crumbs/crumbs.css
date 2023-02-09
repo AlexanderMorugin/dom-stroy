@@ -1,0 +1,15 @@
+.crumbs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 52px 84px 34px 84px;
+}
+
+@media screen and (max-width: 1024px) {
+  .crumbs {
+    padding: 36px 27px 26px 27px;
+  }
+}
