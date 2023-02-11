@@ -1,0 +1,17 @@
+.table__text-box {
+  width: 100%;
+  border-left: 2px solid #FFC239;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0 0 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .table__text-box {
+    border-top: 2px solid #FFC239;
+    border-left: none;
+    margin-top: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

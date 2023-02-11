@@ -1,0 +1,19 @@
+.table__number {
+  line-height: 78px;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  color: rgba(33, 40, 100, 0.2);
+  width: 76px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .table__number {
+    line-height: 59px;
+    font-size: 48px;
+    text-align: center;
+    width: 100%;
+  }
+}

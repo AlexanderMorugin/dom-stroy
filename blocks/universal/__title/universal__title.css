@@ -1,0 +1,17 @@
+.universal__title {
+  position: relative;
+  line-height: 45px;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: 'Inter';
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .universal__title {
+    line-height: 36px;
+    font-size: 36px;
+  }
+}

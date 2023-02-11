@@ -1,0 +1,71 @@
+.order-contract__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "grid-point"
+    "grid-title"
+    "grid-subtitle";
+  align-content: start;
+  width: 100%;
+  max-width: 325px;
+  min-height: 211px;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.order-contract__grid:last-child {
+  position: relative;
+  /* z-index: 3; */
+}
+
+.order-contract__grid:last-child .order-contract__grid-subtitle {
+  max-width: 320px;
+}
+
+.order-contract__grid:last-child .order-contract__grid-point {
+  position: relative;
+  width: 59px;
+  height: 59px;
+  background-color: #353D83;
+  background-image: url("../../../images/icon-order-contract-sign-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 23px;
+  border-radius: 50%;
+  box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: -15px 0 0 -15px;
+  padding: 0;
+  z-index: 2;
+}
+
+.order-contract__grid:last-child .order-contract__grid-title {
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Inter';
+  color: rgba(0, 0, 0, 0.8);
+  margin: 22px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .order-contract__grid {
+    grid-template-columns: 69px 1fr;
+    grid-template-areas:
+      "grid-point grid-title"
+      "grid-point grid-subtitle";
+    min-height: 50px;
+  }
+
+  .order-contract__grid:last-child {
+    background: transparent;
+  }
+
+  .order-contract__grid:last-child .order-contract__grid-point {
+    margin-top: 15px;
+  }
+
+}

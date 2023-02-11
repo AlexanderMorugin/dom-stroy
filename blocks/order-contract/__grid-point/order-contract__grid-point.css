@@ -1,0 +1,14 @@
+.order-contract__grid-point {
+  grid-area: grid-point;
+  position: relative;
+  width: 29px;
+  height: 29px;
+  background: #fff;
+  border: 9px solid #353D83;
+  border-radius: 50%;
+  box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}

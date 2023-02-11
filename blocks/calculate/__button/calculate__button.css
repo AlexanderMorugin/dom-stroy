@@ -28,8 +28,11 @@
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* @media screen and (max-width: 768px){
-  .offer__button-bottom {
-    margin-top: 13px;
+@media screen and (max-width: 768px) {
+  .calculate__button {
+    line-height: 17px;
+    font-size: 14px;
+    padding-left: 27px;
+    padding-right: 27px;
   }
-} */
+}

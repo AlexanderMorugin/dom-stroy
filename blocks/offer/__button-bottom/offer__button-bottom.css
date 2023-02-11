@@ -1,6 +1,5 @@
 .offer__button-bottom {
-  display: flex;
-  align-self: center;
+  /* display: flex; */
   width: fit-content;
   border: 0;
   border-radius: 30px;
@@ -13,7 +12,7 @@
   text-transform: uppercase;
   color: #fff;
   box-sizing: border-box;
-  margin: 5px 0 0 0;
+  margin: 0;
   padding: 20px 50px;
   background-image: linear-gradient(#FFC239, #FFC239);
   background-repeat: no-repeat;

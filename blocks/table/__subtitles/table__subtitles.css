@@ -1,0 +1,16 @@
+.table__subtitles {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 9px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .table__subtitles {
+    margin-top: 29px;
+  }
+}

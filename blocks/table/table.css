@@ -1,0 +1,25 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  width: 100%;
+  background: #F1F1F6;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 57px 84px 90px 84px;
+}
+
+@media screen and (max-width: 1024px) {
+  .table {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    gap: 15px;
+    padding-top: 38px;
+    padding-bottom: 62px;
+  }
+}

@@ -1,0 +1,23 @@
+.order-contract__title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 30px 84px;
+}
+
+@media screen and (max-width: 1024px) {
+  .order-contract__title-box {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-contract__title-box {
+    flex-direction: column;
+    gap: 37px;
+  }
+}

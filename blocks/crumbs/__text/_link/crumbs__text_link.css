@@ -1,3 +1,7 @@
 .crumbs__text_link {
   text-decoration: none;
 }
+
+.crumbs__text_link:hover {
+  color: rgba(33, 40, 100, 1);
+}

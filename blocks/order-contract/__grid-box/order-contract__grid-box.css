@@ -1,0 +1,26 @@
+.order-contract__grid-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: max-content;
+  box-sizing: border-box;
+  margin: 28px 0 0 0;
+  padding: 0 84px;
+}
+
+@media screen and (max-width: 1024px) {
+  .order-contract__grid-box {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-contract__grid-box {
+    position: relative;
+    grid-template-columns: 1fr;
+    gap: 75px;
+    padding-left: 43px;
+  }
+}

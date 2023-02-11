@@ -1,0 +1,12 @@
+.order-contract__line_type_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .order-contract__line_type_mobile {
+    display: block;
+    /* position: absolute; */
+    top: 10px;
+    left: 56px;
+  }
+}

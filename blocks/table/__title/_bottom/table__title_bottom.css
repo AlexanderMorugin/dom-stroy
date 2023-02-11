@@ -1,0 +1,9 @@
+.table__title_bottom {
+  padding-top: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .table__title_bottom {
+    padding-top: 0;
+  }
+}

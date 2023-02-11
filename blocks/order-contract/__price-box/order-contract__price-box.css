@@ -1,0 +1,22 @@
+.order-contract__price-box {
+  width: 100%;
+  max-width: 395px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  background-color: #435D8F;
+  background-image: url("../../../images/icon-order-contract-sign-1.svg");
+  background-repeat: no-repeat;
+  background-position: left 47px center;
+  background-size: 39px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 38px 40px 42px 109px;
+}
+
+@media screen and (max-width: 768px) {
+  .order-contract__price-box {
+    padding: 32px 32px 42px 76px;
+    background-position: left 23px center;
+    background-size: 28px;
+  }
+}

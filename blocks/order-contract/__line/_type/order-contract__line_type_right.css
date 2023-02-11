@@ -1,0 +1,18 @@
+.order-contract__line_type_right {
+  display: block;
+  /* position: absolute; */
+  top: 296px;
+  left: 90px;
+}
+
+@media screen and (max-width: 1024px) {
+  .order-contract__line_type_right {
+    left: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-contract__line_type_right {
+    display: none;
+  }
+}

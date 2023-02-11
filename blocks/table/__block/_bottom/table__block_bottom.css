@@ -1,0 +1,11 @@
+.table__block_bottom {
+  min-height: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .table__block_bottom {
+    min-height: 248px;
+  }
+}

@@ -1,0 +1,7 @@
+.table__subtitle-box {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

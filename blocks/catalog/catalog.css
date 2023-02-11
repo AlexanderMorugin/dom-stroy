@@ -3,7 +3,7 @@
   background: #fff;
   box-sizing: border-box;
   margin: 0;
-  padding: 0 84px 90px 84px;
+  padding: 20px 84px 90px 84px;
 }
 
 @media screen and (max-width: 1024px) {

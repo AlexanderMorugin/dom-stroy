@@ -1,0 +1,20 @@
+.order-contract {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 75px 0 44px 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .order-contract {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 42px;
+    padding-bottom: 95px;
+    
+  }
+}

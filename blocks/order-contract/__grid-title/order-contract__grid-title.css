@@ -1,0 +1,16 @@
+.order-contract__grid-title {
+  grid-area: grid-title;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Inter';
+  color: rgba(0, 0, 0, 0.8);
+  margin: 37px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .order-contract__grid-title {
+    margin-top: 0;
+  }
+}

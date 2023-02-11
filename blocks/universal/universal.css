@@ -1,0 +1,21 @@
+.universal {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 96px 84px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .universal {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .universal {
+    padding-top: 73px;
+  }
+}

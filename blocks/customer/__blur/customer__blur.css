@@ -1,0 +1,27 @@
+.customer__blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../../images/img-customer-bg.png");
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+
+  -webkit-filter: blur(19px);
+  -moz-filter: blur(19px);
+  -o-filter: blur(19px);
+  -ms-filter: blur(19px);
+  filter: blur(19px);
+}
+
+@media screen and (max-width: 768px) {
+  .customer__blur {
+    background: url("../../../images/img-customer-bg-mobile.png");
+    background-repeat: no-repeat;
+    /* background-position: top; */
+    background-size: 100%;
+    margin: 0;
+  }
+}

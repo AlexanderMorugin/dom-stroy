@@ -1,0 +1,39 @@
+.customer__individual {
+  position: absolute;
+  top: 321px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 462px;
+  height: 134px;
+  background: #536FA4;
+  border-radius: 0 20px 20px 0;
+  margin: 0;
+  padding: 0 35px 0 81px;
+  opacity: .8;
+}
+
+@media screen and (max-width: 1024px) {
+  .customer__individual {
+    padding-left: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customer__individual {
+    top: 563px;
+    right: 0;
+    width: 240px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 20px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+}

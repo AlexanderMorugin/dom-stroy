@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебный проект. Интернет-магазин домов ДомСтрой">
+  <meta name="author" content="Александр Моругин">
+  <meta name="keywords" content="html, css, javascript">
+  <title>Заказчику. Интернет-магазин домов ДомСтрой</title>  
+  <link rel="stylesheet" type="text/css" href="./pages/index.css">
+  <script src="./pages/index.js" defer></script>
+  <!-- <script src="./vendor/sliders/slider-vanila/slider-vanila.js" defer></script> -->
+  <script src="./vendor/sliders/slider-matcap/slider-matcap.js" defer></script>
+  <!-- <script src="./vendor/sliders/slider-review/slider-review.js" defer></script> -->  
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo-box" href="./index.html">
+        <p class="header__logo-text">Строительная компания</p>
+        <img class="header__logo-image" src="./images/logo_header.svg" alt="Логотип">
+      </a>
+      <div class="header__data-box">
+        <p class="header__data-text">Пишите нам: <a class="header__data-span" href="mailto:domstroy-st@bk.ru" target="_blank">domstroy-st@bk.ru</a></p>
+        <p class="header__data-text">Моск.обл. г.Ступино ул.Промышленная</p>
+        <p class="header__data-text">Пн-Сб 9:00-18:00, Вс - выходной</p>
+      </div>
+      <div class="header__phone-box">
+        <p class="header__phone">+7 (495) 142-07-25</p>
+        <p class="header__phone">+7 (977) 908-02-50</p>
+      </div>
+      <div class="header__right-box">
+        <button class="header__button-call" type="button">Заказать звонок</button>
+        <div class="header__social-box">
+          <a class="header__social header__social_type_youtube" href="#" target="_blank"></a>
+          <a class="header__social header__social_type_instagram" href="#" target="_blank"></a>
+          <a class="header__social header__social_type_vk" href="#" target="_blank"></a>
+          <a class="header__social header__social_type_whatsapp" href="#" target="_blank"></a>
+          <a class="header__social header__social_type_telegram" href="#" target="_blank"></a>
+        </div>
+      </div>
+      <button class="header__mobile-menu" type="button"></button>
+    </div>
+    <nav>
+      <ul class="header__nav-top">
+        <li class="header__nav-top-item">
+          <a class="header__nav-top-link" href="./index.html" title="Главная">Главная</a>
+        </li>
+        <li class="header__nav-top-item">
+          <a class="header__nav-top-link" href="#" title="Комплектация">Комплектация</a>
+        </li>
+        <li class="header__nav-top-item">
+          <a class="header__nav-top-link" href="./customer.html" title="Заказчику">Заказчику</a>
+        </li>
+        <li class="header__nav-top-item">
+          <a class="header__nav-top-link" href="#" title="Доставка и сборка">Доставка и сборка</a>
+        </li>
+        <li class="header__nav-top-item">
+          <a class="header__nav-top-link" href="#" title="Наши работы">Наши работы</a>
+        </li>
+        <li class="header__nav-top-item">
+          <a class="header__nav-top-link" href="#" title="Контакты">Контакты</a>
+        </li>
+      </ul>
+      <ul class="header__nav-bottom">
+        <li><a class="header__nav-bottom-link" href="#">Каталог домов</a></li>
+        <li><div class="header__nav-bottom-line"></div></li>
+        <li><a class="header__nav-bottom-link" href="#">Каталог бытовок</a></li>
+        <li><div class="header__nav-bottom-line"></div></li>
+        <li><a class="header__nav-bottom-link" href="#">Каталог беседок</a></li>
+        <li><div class="header__nav-bottom-line"></div></li>
+        <li><a class="header__nav-bottom-link" href="#">Каталог бань</a></li>
+        <li><div class="header__nav-bottom-line"></div></li>
+        <li><a class="header__nav-bottom-link" href="#">Каталог хоз. построек</a></li>
+      </ul>
+    </nav>      
+  </header>
+  <main class="content">
+    <section class="customer">
+      <div class="customer__blur"></div>
+      <div class="customer__overlay"></div>
+      <div class="customer__container">
+        <div class="crumbs">
+          <a class="crumbs__text crumbs__text_link" href="./index.html">Главная</a>
+          <div class="crumbs__arrow"></div>
+          <p class="crumbs__text">Заказчику</p>
+        </div>
+        <h1 class="customer__title">Заказчику</h1>
+        <p class="customer__subtitle">Мы ценим каждого клиента и сделаем всю работу сами. Воплощаем в жизнь проекты, создавая дома для комфортной жизни.</p>
+        <div class="customer__individual">
+          <p class="customer__individual-text">Узнать больше об&nbsp;индивидуальном строительстве</p>
+          <form class="customer__button-form" action="#">
+            <button class="customer__button" type="submit"></button>
+          </form>          
+        </div>
+      </div>
+    </section>
+
+    <section class="order-contract">
+      <div class="order-contract__line order-contract__line_type_right"></div>
+      <div class="order-contract__line order-contract__line_type_left"></div>
+      <div class="order-contract__title-box">
+        <h2 class="order-contract__title">Порядок оформления договора</h2>
+        <div class="order-contract__price-box">
+          <p class="order-contract__price-text">При оформлении договора цена зафиксированна</p>
+        </div>
+      </div>
+      <div class="order-contract__grid-box">
+        <div class="order-contract__line order-contract__line_type_mobile"></div>
+        <div class="order-contract__grid">
+          <div class="order-contract__grid-point"></div>
+          <h3 class="order-contract__grid-title">Подробный расчет стоимости</h3>
+          <p class="order-contract__grid-subtitle">Действителен в течение 7 дней</p>
+        </div>
+        <div class="order-contract__grid">
+          <div class="order-contract__grid-point"></div>
+          <h3 class="order-contract__grid-title">Согласовываем проект</h3>
+          <p class="order-contract__grid-subtitle">Помогаем с выбором проекта. Согласовываем планировку и комплектацию</p>
+        </div>
+        <div class="order-contract__grid">
+          <div class="order-contract__grid-point"></div>
+          <h3 class="order-contract__grid-title">Заключаем договор</h3>
+          <p class="order-contract__grid-subtitle">В офисе или дистанционно. Авансовая оплата 30%</p>
+        </div>
+        <div class="order-contract__grid">
+          <div class="order-contract__grid-point"></div>
+          <h3 class="order-contract__grid-title">Доставляем материалы</h3>
+          <p class="order-contract__grid-subtitle">Вторая оплата до 60%</p>
+        </div>
+        <div class="order-contract__grid">
+          <div class="order-contract__grid-point"></div>
+          <h3 class="order-contract__grid-title">Возводим строение</h3>
+          <p class="order-contract__grid-subtitle">Качественно и профессионально возводим постройку</p>
+        </div>
+        <div class="order-contract__grid">
+          <div class="order-contract__grid-point"></div>
+          <h3 class="order-contract__grid-title">Вы принимаете готовую постройку</h3>
+          <p class="order-contract__grid-subtitle">Подписание акта приема-передачи и окончательная оплата</p>
+        </div>
+      </div>      
+    </section>
+
+    <section class="universal">
+      <div class="universal__blur universal__blur_type_one"></div>
+      <div class="universal__overlay"></div>
+      <h2 class="universal__title">Дистанционное оформление договора</h2>
+      <p class="universal__subtitle">
+        Мы рады предложить своим клиентам услугу по дистанционному оформлению договоров на строительство домов и бань,
+        для покупателей у которых нет возможности приехать к нам в офис.
+      </p>
+    </section>
+
+    <section class="table">
+      <div class="table__block">
+        <p class="table__number">1</p>
+        <div class="table__text-box">
+          <h2 class="table__title">Обсуждение строения и стоимость строительства</h2>
+          <ul class="table__subtitles">
+            <li class="table__subtitle-box">
+              <p class="table__subtitle">&nbsp;&#183;&nbsp;</p>
+              <p class="table__subtitle">Позвоните или оставьте заявку на нашем сайте с параметрами интересующего строения.</p>
+            </li>
+            <li class="table__subtitle-box">
+              <p class="table__subtitle">&nbsp;&#183;&nbsp;</p>
+              <p class="table__subtitle">После согласования планировки и комплектации, мы подготовим расчет стоимости и отправим на электронную почту.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="table__block">
+        <p class="table__number">2</p>
+        <div class="table__text-box">
+          <h2 class="table__title">Заключение договора на строительство объекта</h2>
+          <ul class="table__subtitles">
+            <li class="table__subtitle-box">
+              <p class="table__subtitle">&nbsp;&#183;&nbsp;</p>
+              <p class="table__subtitle">После согласования стоимости и условий, подготавливается договор (с печатью и подписью) и отправляется на электронную почту</p>
+            </li>
+            <li class="table__subtitle-box">
+              <p class="table__subtitle">&nbsp;&#183;&nbsp;</p>
+              <p class="table__subtitle">Вам необходимо подписать договор и отправить нам по электронной почте, а затем внести необходимую оплату, указанную в договоре.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="table__block">
+        <p class="table__number">3</p>
+        <div class="table__text-box">
+          <h2 class="table__title">Строительство обьекта и сдача по завершению работ</h2>
+          <ul class="table__subtitles">
+            <li class="table__subtitle-box">
+              <p class="table__subtitle">&nbsp;&#183;&nbsp;</p>
+              <p class="table__subtitle">В назначенную дату, завозится строй.материалы на объект- начинается строительство. Дата окончания работ прописана в договоре.</p>
+            </li>
+            <li class="table__subtitle-box">
+              <p class="table__subtitle">&nbsp;&#183;&nbsp;</p>
+              <p class="table__subtitle">После завершения строительства подписывается Акт приемки-передачи и Вы становитесь полноправным собственником построенного объекта.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="matcap matcap_slider">
+      <!-- Content - 1 -->
+      <div class="matcap__container matcap__container_current matcap__container_type_one">
+        <div class="matcap__image-box">
+          <img class="matcap__image" src="./images/img-matcap.png" alt="">
+        </div>
+        <div class="matcap__block">
+          <h2 class="matcap__block-title">Мы работаем с <span class="matcap__block-title matcap__block-title_span">материнским капиталом!</span></h2>
+          <div class="matcap__middle-box">
+            <button class="matcap__button" type="button">Оставить заявку</button>
+          </div>
+          <p class="matcap__slider-page">1/2</p>
+        </div>
+      </div>
+      <!-- Content - 2 -->
+      <div class="matcap__container matcap__container_type_two">
+        <div class="matcap__image-box">
+          <img class="matcap__image" src="./images/img-matcap-2.png" alt="">
+        </div>
+        <div class="matcap__block">
+          <h2 class="matcap__block-title">Строим <span class="matcap__block-title matcap__block-title_span">бани, беседки, бытовки и дома в кредит!</span></h2>
+          <div class="matcap__middle-box">
+            <button class="matcap__button" type="button">Оставить заявку</button>
+            <img class="matcap__credit-image" src="./images/img-matcap-credit.png" alt="">
+          </div>
+          <p class="matcap__slider-page">2/2</p>
+        </div>
+      </div>
+      <!-- Slider Panel -->
+      <div class="matcap__slider-panel">
+        <button class="matcap__slider-control matcap__slider-control_type_prev" data-slide="prev">⟵</button>
+        <button class="matcap__slider-control matcap__slider-control_type_next" data-slide="next">⟶</button>
+      </div>
+    </section>
+
+    <section class="universal">
+      <div class="universal__blur universal__blur_type_two"></div>
+      <div class="universal__overlay"></div>
+      <h2 class="universal__title">Порядок оплаты</h2>
+      <p class="universal__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+      </p>
+    </section>
+
+    <section class="table">
+      <div class="table__block table__block_bottom">
+        <p class="table__number">1</p>
+        <div class="table__text-box">
+          <h2 class="table__title table__title_bottom">Заключаем договор</h2>
+          <div class="table__subtitles table__subtitles_bottom">
+            <div class="table__subtitle-box">
+              <p class="table__subtitle">&nbsp;&#183;&nbsp;</p>
+              <p class="table__subtitle">В офисе или дистанционно. Авансовая оплата 30%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table__block table__block_bottom">
+        <p class="table__number">2</p>
+        <div class="table__text-box">
+          <h2 class="table__title table__title_bottom">Доставляем материалы</h2>
+          <div class="table__subtitles table__subtitles_bottom">
+            <div class="table__subtitle-box">
+              <p class="table__subtitle">&nbsp;&#183;&nbsp;</p>
+              <p class="table__subtitle">Вторая оплата до 60%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table__block table__block_bottom">
+        <p class="table__number">3</p>
+        <div class="table__text-box">
+          <h2 class="table__title table__title_bottom">Возводим строение</h2>
+          <div class="table__subtitles table__subtitles_bottom">
+            <div class="table__subtitle-box">
+              <p class="table__subtitle">&nbsp;&#183;&nbsp;</p>
+              <p class="table__subtitle">Качественно и профессионально возводим постройку</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table__block table__block_bottom">
+        <p class="table__number">4</p>
+        <div class="table__text-box">
+          <h2 class="table__title table__title_bottom">Вы принимаете готовую постройку</h2>
+          <div class="table__subtitles table__subtitles_bottom">
+            <div class="table__subtitle-box">
+              <p class="table__subtitle">&nbsp;&#183;&nbsp;</p>
+              <p class="table__subtitle">Подписание акта приема-передачи и окончательная оплата</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculate">
+      <div class="calculate__container">
+        <span class="calculate__overlay"></span>            
+      </div>
+      <div class="calculate__blocks">
+        <div class="calculate__block-one">
+          <h2 class="calculate__title">Хотите рассчитать <span class="calculate__title calculate__title_span">стоимость проекта? Это просто!</span></h2>
+          <p class="calculate__subtitle">Оставьте заявку и наши консультанты рассчитают стоимость Вашего проекта бесплатно и быстро!</p>
+        </div>
+        <div class="calculate__block-two">
+          <button class="calculate__button" type="button">Расчитать стоимость проекта</button>
+        </div>        
+      </div>      
+    </section>  
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a class="footer__logo-box" href="./index.html">
+        <p class="footer__logo-text">Строительная компания</p>
+        <img class="footer__logo-image" src="./images/logo_header.svg" alt="Логотип">
+      </a>
+      <div class="footer__data-box">
+        <p class="footer__data-text">Пишите нам: <a class="footer__data-span" href="mailto:domstroy-st@bk.ru" target="_blank">domstroy-st@bk.ru</a></p>
+        <p class="footer__data-text">Моск.обл. г.Ступино ул.Промышленная</p>
+        <p class="footer__data-text">Пн-Сб 9:00-18:00, Вс - выходной</p>
+      </div>
+      <div class="footer__phone-box">
+        <p class="footer__phone">+7 (495) 142-07-25</p>
+        <p class="footer__phone">+7 (977) 908-02-50</p>
+      </div>
+      <div class="footer__right-box">
+        <h2 class="footer__social-title">Мы в социальных сетях:</h2>
+        <div class="footer__social-box">
+          <a class="footer__social footer__social_type_youtube" href="#" target="_blank"></a>
+          <a class="footer__social footer__social_type_instagram" href="#" target="_blank"></a>
+          <a class="footer__social footer__social_type_vk" href="#" target="_blank"></a>
+          <a class="footer__social footer__social_type_whatsapp" href="#" target="_blank"></a>
+          <a class="footer__social footer__social_type_telegram" href="#" target="_blank"></a>
+        </div>
+        <button class="footer__button footer__button_mobile_top" type="button">Честный калькулятор беседок</button>
+        <button class="footer__button footer__button_mobile_bottom" type="button">Связаться с нами</button>
+      </div>
+    </div>
+    <nav class="footer__middle">
+      <div class="footer__link-box">
+        <a class="footer__link-title" href="./catalog.html">Продукция</a>
+        <ul class="footer__links">
+          <li><a class="footer__link" href="#">Каркасные дома</a></li>
+          <li><a class="footer__link" href="#">Модульные дома</a></li>
+          <li><a class="footer__link" href="#">Бани “Под ключ”</a></li>
+          <li><a class="footer__link" href="#">Беседки</a></li>
+          <li><a class="footer__link" href="#">Бытовки (утепленные)</a></li>
+          <li><a class="footer__link" href="#">Хоз. постройки (без&nbsp;утепления)</a></li>
+        </ul>
+      </div>
+      <div class="footer__link-box">
+        <a class="footer__link-title" href="#">Комплектация</a>
+        <ul class="footer__links">
+          <li><a class="footer__link" href="#">Комплектация домов</a></li>
+          <li><a class="footer__link" href="#">Комплектация бань</a></li>
+          <li><a class="footer__link" href="#">Комплектация беседок</a></li>
+          <li><a class="footer__link" href="#">Комплектация бытовок</a></li>
+          <li><a class="footer__link" href="#">Комплектация хоз. построек</a></li>
+        </ul>
+      </div>
+      <div class="footer__link-box">
+        <a class="footer__link-title" href="./customer.html">Заказчику</a>
+        <ul class="footer__links">
+          <li><a class="footer__link" href="#">Индивидуальное строительство</a></li>
+          <li><a class="footer__link" href="#">Фиксированные цены</a></li>
+          <li><a class="footer__link" href="#">Дистанционное оформление договора</a></li>
+          <li><a class="footer__link" href="#">Материнский капитал</a></li>
+          <li><a class="footer__link" href="#">Порядок оплаты</a></li>
+          <li><a class="footer__link" href="#">Процесс заказа</a></li>
+        </ul>
+      </div>
+      <div class="footer__link-box">
+        <a class="footer__link-title" href="#">Полезно</a>
+        <ul class="footer__links">
+          <li><a class="footer__link" href="#">Доставка и сборка</a></li>
+          <li><a class="footer__link" href="#">Контакты</a></li>
+          <li><a class="footer__link" href="#">Наши работы</a></li>
+        </ul>
+      </div>
+      <div class="footer__button-box">
+        <button class="footer__button" type="button">Честный калькулятор беседок</button>
+        <button class="footer__button footer__button_second" type="button">Связаться с нами</button>
+      </div>
+    </nav>
+    <div class="footer__bottom">
+      <p class="footer__copyright">Александр Моругин. Учебный проект. 2023 г.</p>
+      <ul class="footer__bottom-links">
+        <li><a class="footer__bottom-link" href="#">Политика конфиденциальности</a></li>
+        <li><a class="footer__bottom-link" href="#">Пользовательское соглашение</a></li>
+        <li><a class="footer__bottom-link" href="#">Cookies</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
