@@ -1,0 +1,22 @@
+.request {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 74px 84px 70px 84px;
+}
+
+@media screen and (max-width: 1024px) {
+  .request {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .request {
+    padding: 45px 17px 96px 17px;
+  }
+}

@@ -1,0 +1,16 @@
+.request__calculate-title {
+  line-height: 32px;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .request__calculate-title {
+    line-height: 28px;
+    font-size: 23px;
+  }
+}

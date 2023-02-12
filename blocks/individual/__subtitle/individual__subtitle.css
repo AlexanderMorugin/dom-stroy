@@ -1,0 +1,19 @@
+.individual__subtitle {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  color: rgba(32, 32, 32, 0.8);
+  width: 100%;
+  max-width: 510px;
+  margin: 22px 0 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .individual__subtitle {
+    line-height: 17px;
+    font-size: 14px;
+    margin-top: 28px;
+  }
+}

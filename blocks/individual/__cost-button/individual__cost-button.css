@@ -1,0 +1,70 @@
+.individual__cost-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;  
+  border: 1px solid #212864;
+  border-radius: 50%;
+  background-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: .8s;
+  animation: shadow 1s linear infinite;
+}
+
+.individual__cost-button:hover {
+  background: #fff;
+  border: 1px dashed #212864;
+  /* box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.2); */
+  animation: scale 1s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .individual__cost-button {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+@-webkit-keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.1);
+  }
+  65% {
+    transform: scale(.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.1);
+  }
+  40% {
+    box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.1);
+  }
+  40% {
+    box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+

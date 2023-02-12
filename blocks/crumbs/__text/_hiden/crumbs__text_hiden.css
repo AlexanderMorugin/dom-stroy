@@ -1,0 +1,9 @@
+.crumbs__text_hiden {
+  
+}
+
+@media screen and (max-width: 440px) {
+  .crumbs__text_hiden {
+    display: none;
+  }
+}

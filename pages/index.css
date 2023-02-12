@@ -219,8 +219,10 @@
 
 @import url(../blocks/crumbs/crumbs.css);
 @import url(../blocks/crumbs/__text/crumbs__text.css);
+@import url(../blocks/crumbs/__text/_hiden/crumbs__text_hiden.css);
 @import url(../blocks/crumbs/__text/_link/crumbs__text_link.css);
 @import url(../blocks/crumbs/__arrow/crumbs__arrow.css);
+@import url(../blocks/crumbs/__arrow/_hiden/crumbs__arrow_hiden.css);
 
 @import url(../blocks/catalog/catalog.css);
 @import url(../blocks/catalog/__title/catalog__title.css);
@@ -296,6 +298,28 @@
 @import url(../blocks/table/__subtitles/_bottom/table__subtitles_bottom.css);
 @import url(../blocks/table/__subtitle-box/table__subtitle-box.css);
 @import url(../blocks/table/__subtitle/table__subtitle.css);
+
+@import url(../blocks/individual/individual.css);
+@import url(../blocks/individual/__blur/individual__blur.css);
+@import url(../blocks/individual/__overlay/individual__overlay.css);
+@import url(../blocks/individual/__container/individual__container.css);
+@import url(../blocks/individual/__title/individual__title.css);
+@import url(../blocks/individual/__subtitle/individual__subtitle.css);
+@import url(../blocks/individual/__cost-box/individual__cost-box.css);
+@import url(../blocks/individual/__cost-button/individual__cost-button.css);
+@import url(../blocks/individual/__cost-arrow/individual__cost-arrow.css);
+@import url(../blocks/individual/__cost-text/individual__cost-text.css);
+
+@import url(../blocks/request/request.css);
+@import url(../blocks/request/__title/request__title.css);
+@import url(../blocks/request/__span/request__span.css);
+@import url(../blocks/request/__subtitle/request__subtitle.css);
+@import url(../blocks/request/__calculate-box/request__calculate-box.css);
+@import url(../blocks/request/__calculate-title/request__calculate-title.css);
+@import url(../blocks/request/__calculate-text/request__calculate-text.css);
+@import url(../blocks/request/__calculate-list/request__calculate-list.css);
+@import url(../blocks/request/__calculate-paragraph-box/request__calculate-paragraph-box.css);
+@import url(../blocks/request/__calculate-paragraph/request__calculate-paragraph.css);
 
 
 

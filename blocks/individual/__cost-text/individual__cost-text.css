@@ -1,0 +1,27 @@
+.individual__cost-text {
+  /* display: flex; */
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Inter';
+  color: #212864;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 276px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .individual__cost-text {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .individual__cost-text {
+    line-height: 17px;
+    font-size: 14px;
+    max-width: 190px;
+  }
+}

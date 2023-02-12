@@ -7,12 +7,12 @@
   <meta name="description" content="Учебный проект. Интернет-магазин домов ДомСтрой">
   <meta name="author" content="Александр Моругин">
   <meta name="keywords" content="html, css, javascript">
-  <title>Каталог построек. Интернет-магазин домов ДомСтрой</title>  
+  <title>Индивидуальное строительство. Интернет-магазин домов ДомСтрой</title>  
   <link rel="stylesheet" type="text/css" href="./pages/index.css">
-  <!-- <script src="./pages/index.js" defer></script>
-  <script src="./vendor/sliders/slider-vanila/slider-vanila.js" defer></script>
-  <script src="./vendor/sliders/slider-matcap/slider-matcap.js" defer></script>
-  <script src="./vendor/sliders/slider-review/slider-review.js" defer></script> -->  
+  <!-- <script src="./pages/index.js" defer></script> -->
+  <!-- <script src="./vendor/sliders/slider-vanila/slider-vanila.js" defer></script> -->
+  <!-- <script src="./vendor/sliders/slider-matcap/slider-matcap.js" defer></script> -->
+  <!-- <script src="./vendor/sliders/slider-review/slider-review.js" defer></script> -->  
 </head>
 <body class="page">
   <header class="header">
@@ -77,64 +77,83 @@
     </nav>      
   </header>
   <main class="content">
-    <section class="catalog">
-      <div class="crumbs">
-        <a class="crumbs__text crumbs__text_link" href="./index.html">Главная</a>
-        <div class="crumbs__arrow"></div>
-        <p class="crumbs__text">Каталог</p>
-      </div>
-      <h1 class="catalog__title">Каталог построек</h1>
-      <p class="catalog__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <nav class="catalog__buttons">
-        <button class="catalog__button catalog__button_type_house" type="button">
-          <span class="catalog__button-overlay"></span>
-          <p class="catalog__button-text catalog__button-text_fade_one">Каркасные дома</p>
-        </button>
-        <button class="catalog__button catalog__button_type_sauna" type="button">
-          <span class="catalog__button-overlay"></span>
-          <p class="catalog__button-text catalog__button-text_fade_two">Бани</p>
-        </button>
-        <button class="catalog__button catalog__button_type_pavilion" type="button">
-          <span class="catalog__button-overlay"></span>
-          <p class="catalog__button-text catalog__button-text_fade_three">Беседки</p>
-        </button>
-        <button class="catalog__button catalog__button_type_change-house" type="button">
-          <span class="catalog__button-overlay"></span>
-          <p class="catalog__button-text catalog__button-text_fade_four">Бытовки</p>
-        </button>
-        <button class="catalog__button catalog__button_type_outbuilding" type="button">
-          <span class="catalog__button-overlay"></span>
-          <p class="catalog__button-text catalog__button-text_fade_five">Хозяйственные постройки</p>
-        </button>
-      </nav>
-      <p class="catalog__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <p class="catalog__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </section>
+    <section class="individual">
+      <div class="individual__blur"></div>
+      <div class="individual__overlay"></div>
+      <div class="individual__container">
 
-    <section class="calculate">
-      <div class="calculate__container">
-        <span class="calculate__overlay"></span>            
-      </div>
-      <div class="calculate__blocks">
-        <div class="calculate__block-one">
-          <h2 class="calculate__title">Хотите рассчитать <span class="calculate__title calculate__title_span">стоимость проекта? Это просто!</span></h2>
-          <p class="calculate__subtitle">Оставьте заявку и наши консультанты рассчитают стоимость Вашего проекта бесплатно и быстро!</p>
+        <div class="crumbs">
+          <a class="crumbs__text crumbs__text_link" href="./index.html">Главная</a>
+          <div class="crumbs__arrow"></div>
+          <a class="crumbs__text crumbs__text_link" href="./customer.html">Заказчику</a>
+          <div class="crumbs__arrow crumbs__arrow_hiden"></div>
+          <p class="crumbs__text crumbs__text_hiden">Индивидуальное строительство</p>
         </div>
-        <div class="calculate__block-two">
-          <button class="calculate__button" type="button">Расчитать стоимость проекта</button>
-        </div>        
-      </div>      
+
+        <h1 class="individual__title">Индивидуальное строительство</h1>
+        <p class="individual__subtitle">Мы ценим каждого клиента и сделаем всю работу сами. Воплощаем в жизнь проекты, создавая дома для комфортной жизни.</p>
+        <div class="individual__cost-box">
+          <div class="individual__cost-button">
+            <img class="individual__cost-arrow" src="./images/icon-individual-arrow.svg" alt="Расчитать стоимость">
+          </div>
+          <p class="individual__cost-text">Рассчитать стоимость индивидуального проекта</p>
+        </div>
+      </div>
     </section>
 
+    <section class="request">
+      <h2 class="request__title">Как подать заявку <span class="request__span">на индивидуальное строительство?</span></h2>
+      <p class="request__subtitle">
+        Хотите расчитать стоимость строительных работ, заполните форму для расчета. Вы вводите необходимые данные, отправляете их нашим специалистам. 
+        Они определяют стоимость строительства, присылают вам результат расчетов.
+      </p>
+      <div class="request__calculate-box">
+        <h3 class="request__calculate-title">Что нужно указать для расчета стоимости?</h3>
+        <p class="request__calculate-text">Для расчета цены строительных работ понадобится указать:</p>
+        <ul class="request__calculate-list">
+          <li class="request__calculate-paragraph-box">
+            <p class="request__calculate-paragraph">&nbsp;&#183;&nbsp;</p>
+            <p class="request__calculate-paragraph">Тип сооружаемого объекта (Каркасный дом/ баня /беседка из мини-бруса/ бытовка).</p>
+          </li>
+          <li class="request__calculate-paragraph-box">
+            <p class="request__calculate-paragraph">&nbsp;&#183;&nbsp;</p>
+            <p class="request__calculate-paragraph">Площадь сооружаемого объекта.</p>
+          </li>
+          <li class="request__calculate-paragraph-box">
+            <p class="request__calculate-paragraph">&nbsp;&#183;&nbsp;</p>
+            <p class="request__calculate-paragraph">Тип фундаментной основы (блочный/ свайно-винтовой, не нужен).</p>
+          </li>
+          <li class="request__calculate-paragraph-box">
+            <p class="request__calculate-paragraph">&nbsp;&#183;&nbsp;</p>
+            <p class="request__calculate-paragraph">Толщину стеновых поверхностей (от пятидесяти до двухсот миллиметров).</p>
+          </li>
+          <li class="request__calculate-paragraph-box">
+            <p class="request__calculate-paragraph">&nbsp;&#183;&nbsp;</p>
+            <p class="request__calculate-paragraph">Количество этажей (один, полтора, два, с мансардным этажом).</p>
+          </li>
+          <li class="request__calculate-paragraph-box">
+            <p class="request__calculate-paragraph">&nbsp;&#183;&nbsp;</p>
+            <p class="request__calculate-paragraph">Адрес места строительства (для расчета киллометража)</p>
+          </li>
+          <li class="request__calculate-paragraph-box">
+            <p class="request__calculate-paragraph">&nbsp;&#183;&nbsp;</p>
+            <p class="request__calculate-paragraph">Имя заказчика.</p>
+          </li>
+          <li class="request__calculate-paragraph-box">
+            <p class="request__calculate-paragraph">&nbsp;&#183;&nbsp;</p>
+            <p class="request__calculate-paragraph">Телефонный номер заказчика.</p>
+          </li>
+          <li class="request__calculate-paragraph-box">
+            <p class="request__calculate-paragraph">&nbsp;&#183;&nbsp;</p>
+            <p class="request__calculate-paragraph">Адрес электронной почты заказчика.</p>
+          </li>
+        </ul>
+        <p class="request__calculate-text">
+          Есть возможность прикрепления файла. Также заказчик может в произвольной форме написать собственные пожелания к проведению строительных работ. 
+          После ввода всех необходимы данных требуется нажать на кнопку «Отправить». Ответ поступит на телефонный номер либо же электронную почту заказчика.
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
